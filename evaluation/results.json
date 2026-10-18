@@ -1,0 +1,24 @@
+[
+  {
+    "approach": "keyword_baseline",
+    "test_reports": 160,
+    "coverage": 0.76875,
+    "accuracy_when_decided": 0.9512195121951219,
+    "abstentions": 37,
+    "urgent_misses": 6,
+    "costly_misroutes": 0,
+    "p50_latency_ms": 0.004899993655271828,
+    "estimated_cost_usd_per_1000": 0.0
+  },
+  {
+    "approach": "naive_bayes_with_abstention",
+    "test_reports": 160,
+    "coverage": 0.725,
+    "accuracy_when_decided": 1.0,
+    "abstentions": 44,
+    "urgent_misses": 0,
+    "costly_misroutes": 0,
+    "p50_latency_ms": 0.01630000042496249,
+    "estimated_cost_usd_per_1000": 0.0
+  }
+]

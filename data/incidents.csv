@@ -1,0 +1,721 @@
+incident_id,report_text,category,urgent,source
+SYN-0394,Pallet arrived crushed; 11 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0720,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0427,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0195,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0174,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0591,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0325,Truck is late after traffic near West Gate; ETA moved by 9 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0550,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0271,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0635,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0244,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0436,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0521,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0082,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0322,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0012,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0059,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0706,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0047,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0467,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0071,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0177,Pallet arrived crushed; 17 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0502,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0285,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0606,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0118,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0710,Truck is late after traffic near Airport Warehouse; ETA moved by 12 hours. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0415,Pallet arrived crushed; 10 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0410,Shipment was sent to the wrong depot in West Gate. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0257,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0361,Shipment was sent to the wrong depot in Central Yard. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0423,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0686,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0685,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0106,Temperature logger failed and vaccine cartons may be spoiled. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0103,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0311,Carrier reported a delay; delivery is now expected tomorrow.,DELAY,false,synthetic_template_v1
+SYN-0314,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0374,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0069,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0464,Pallet arrived crushed; 18 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0453,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0500,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0002,Package was wet and torn during unloading at Central Yard.,DAMAGE,false,synthetic_template_v1
+SYN-0199,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0105,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0251,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0425,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0144,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0267,Cold-chain alert: cargo became warm during transfer at North Hub. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0230,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0566,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0281,Cold-chain alert: cargo became warm during transfer at Airport Warehouse. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0358,Reefer sensor shows 17 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0608,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0294,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0077,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0368,Label contains an incorrect destination and parcel is misrouted.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0668,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0136,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0006,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0408,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0110,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0027,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0705,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0024,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0457,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0335,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0211,Cold-chain alert: cargo became warm during transfer at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0612,Truck is late after traffic near West Gate; ETA moved by 8 hours.,DELAY,false,synthetic_template_v1
+SYN-0646,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0155,Cold-chain alert: cargo became warm during transfer at North Hub. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0572,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0365,Cold-chain alert: cargo became warm during transfer at West Gate. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0119,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0647,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0712,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0418,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0031,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0573,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0498,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0156,Pallet arrived crushed; 10 cartons are damaged and one is leaking.,DAMAGE,true,synthetic_template_v1
+SYN-0219,Package was wet and torn during unloading at Central Yard. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0183,Reefer sensor shows 14 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0191,Package was wet and torn during unloading at Airport Warehouse.,DAMAGE,false,synthetic_template_v1
+SYN-0304,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0407,Temperature logger failed and vaccine cartons may be spoiled. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0576,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0353,Truck is late after traffic near West Gate; ETA moved by 11 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0086,Forklift impact broke the outer crate; contents require inspection. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0050,Temperature logger failed and vaccine cartons may be spoiled. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0300,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0011,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0507,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0615,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0062,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0458,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0197,Reefer sensor shows 10 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0600,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0413,General inquiry about packaging options for a future shipment. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0168,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0420,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0545,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0232,Cold-chain alert: cargo became warm during transfer at Harbor Depot. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0326,Shipment was sent to the wrong depot in Harbor Depot.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0593,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0108,Carrier reported a delay; delivery is now expected tomorrow.,DELAY,false,synthetic_template_v1
+SYN-0092,Temperature logger failed and vaccine cartons may be spoiled. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0128,Package was wet and torn during unloading at Airport Warehouse. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0678,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0547,Cold-chain alert: cargo became warm during transfer at Airport Warehouse. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0172,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0480,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0508,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0505,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0649,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0180,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0597,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0169,Temperature logger failed and vaccine cartons may be spoiled.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0657,Customs placed the cargo on hold pending inspection at the border. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0624,Temperature logger failed and vaccine cartons may be spoiled. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0537,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0456,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0037,Pallet arrived crushed; 17 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0571,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0140,General inquiry about packaging options for a future shipment. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0477,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0233,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0076,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0563,Truck is late after traffic near Airport Warehouse; ETA moved by 18 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0042,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0090,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0482,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0662,Shipment was sent to the wrong depot in Airport Warehouse.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0204,Reefer sensor shows 4 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0372,Reefer sensor shows 14 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0401,Package was wet and torn during unloading at North Hub.,DAMAGE,false,synthetic_template_v1
+SYN-0328,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0312,Shipment was sent to the wrong depot in North Hub.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0239,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0298,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0481,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0343,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0380,Package was wet and torn during unloading at Central Yard. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0332,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0052,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0088,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0203,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0200,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0114,Package was wet and torn during unloading at Central Yard. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0640,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0592,Shipment was sent to the wrong depot in West Gate.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0157,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0424,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0366,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0679,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0013,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0676,Shipment was sent to the wrong depot in Harbor Depot. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0250,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0214,Shipment was sent to the wrong depot in West Gate.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0548,Package was wet and torn during unloading at Harbor Depot.,DAMAGE,false,synthetic_template_v1
+SYN-0560,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0192,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0284,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0462,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0681,Pallet arrived crushed; 5 cartons are damaged and one is leaking. Driver has notified dispatch.,DAMAGE,true,synthetic_template_v1
+SYN-0446,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0178,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0474,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0575,Temperature logger failed and vaccine cartons may be spoiled. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0362,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0161,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0189,General inquiry about packaging options for a future shipment. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0323,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0428,Reefer sensor shows 15 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0680,Reefer sensor shows 16 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0644,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0289,Pallet arrived crushed; 12 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0293,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0689,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0143,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0388,Truck is late after traffic near North Hub; ETA moved by 16 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0149,Package was wet and torn during unloading at Harbor Depot. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0466,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0670,Delivery requires a signature but the proof-of-delivery form is blank. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0669,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0186,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0390,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0097,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0396,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0421,Reefer sensor shows 5 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0215,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0653,Package was wet and torn during unloading at West Gate. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0334,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0429,Package was wet and torn during unloading at West Gate. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0495,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0269,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0342,Customs placed the cargo on hold pending inspection at the border. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0557,Shipment was sent to the wrong depot in North Hub. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0422,Pallet arrived crushed; 4 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0549,Carrier reported a delay; delivery is now expected tomorrow.,DELAY,false,synthetic_template_v1
+SYN-0167,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0217,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0704,Label contains an incorrect destination and parcel is misrouted.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0455,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0256,Shipment was sent to the wrong depot in Harbor Depot.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0220,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0139,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0673,Reefer sensor shows 3 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0486,Truck is late after traffic near Airport Warehouse; ETA moved by 2 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0675,Truck is late after traffic near Airport Warehouse; ETA moved by 17 hours. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0320,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0517,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0184,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0223,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0001,Temperature logger failed and vaccine cartons may be spoiled. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0595,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0015,Reefer sensor shows 13 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0381,Truck is late after traffic near West Gate; ETA moved by 2 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0109,Shipment was sent to the wrong depot in Harbor Depot. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0122,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0598,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0628,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0280,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0409,Truck is late after traffic near Harbor Depot; ETA moved by 6 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0262,Truck is late after traffic near West Gate; ETA moved by 13 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0044,Pallet arrived crushed; 9 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0248,Truck is late after traffic near West Gate; ETA moved by 17 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0094,Truck is late after traffic near Harbor Depot; ETA moved by 11 hours.,DELAY,false,synthetic_template_v1
+SYN-0442,Cold-chain alert: cargo became warm during transfer at North Hub. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0463,Cold-chain alert: cargo became warm during transfer at Airport Warehouse.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0160,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0403,Shipment was sent to the wrong depot in North Hub. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0605,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0032,Shipment was sent to the wrong depot in Airport Warehouse.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0292,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0529,Shipment was sent to the wrong depot in North Hub. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0336,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0384,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0643,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0102,Label contains an incorrect destination and parcel is misrouted.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0469,General inquiry about packaging options for a future shipment. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0206,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0354,Shipment was sent to the wrong depot in West Gate. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0478,Pallet arrived crushed; 11 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0278,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0483,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0131,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0578,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0664,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0243,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0691,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0383,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0029,Reefer sensor shows 5 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0586,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0341,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0171,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0702,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0488,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0400,Cold-chain alert: cargo became warm during transfer at West Gate. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0338,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0023,Package was wet and torn during unloading at Central Yard.,DAMAGE,false,synthetic_template_v1
+SYN-0497,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0700,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0036,Reefer sensor shows 15 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0674,Forklift impact broke the outer crate; contents require inspection. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0121,Package was wet and torn during unloading at Harbor Depot. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0370,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0182,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0124,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0414,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0620,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0565,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0078,Temperature logger failed and vaccine cartons may be spoiled.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0546,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0279,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0540,Reefer sensor shows 18 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0579,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0305,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0660,Pallet arrived crushed; 3 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0085,Reefer sensor shows 18 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0479,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0291,Label contains an incorrect destination and parcel is misrouted.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0207,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0439,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0270,Shipment was sent to the wrong depot in Central Yard. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0642,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0472,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0272,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0590,Pallet arrived crushed; 9 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0654,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0150,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0331,Pallet arrived crushed; 15 cartons are damaged and one is leaking. Driver has notified dispatch.,DAMAGE,true,synthetic_template_v1
+SYN-0296,Forklift impact broke the outer crate; contents require inspection. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0224,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0651,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0376,Delivery requires a signature but the proof-of-delivery form is blank. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0426,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0287,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0614,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0629,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0145,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0209,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0530,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0263,Shipment was sent to the wrong depot in Airport Warehouse. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0562,Pallet arrived crushed; 5 cartons are damaged and one is leaking. Driver has notified dispatch.,DAMAGE,true,synthetic_template_v1
+SYN-0142,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0112,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0216,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0445,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0631,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0240,Forklift impact broke the outer crate; contents require inspection. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0349,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0603,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0528,Truck is late after traffic near Harbor Depot; ETA moved by 13 hours. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0162,Reefer sensor shows 9 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0655,Shipment was sent to the wrong depot in Airport Warehouse.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0543,Shipment was sent to the wrong depot in Airport Warehouse. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0511,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0344,Cold-chain alert: cargo became warm during transfer at Central Yard.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0033,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0641,Shipment was sent to the wrong depot in West Gate.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0416,Truck is late after traffic near Harbor Depot; ETA moved by 12 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0430,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0487,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0255,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0656,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0330,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0520,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0535,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0080,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0564,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0473,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0074,Shipment was sent to the wrong depot in Central Yard. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0454,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0053,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0301,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0127,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0602,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0126,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0173,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0201,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0402,Truck is late after traffic near Central Yard; ETA moved by 4 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0690,Label contains an incorrect destination and parcel is misrouted.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0542,Truck is late after traffic near Airport Warehouse; ETA moved by 18 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0017,Truck is late after traffic near North Hub; ETA moved by 12 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0364,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0587,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0398,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0397,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0313,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0501,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0470,Reefer sensor shows 16 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0132,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0193,Shipment was sent to the wrong depot in Harbor Depot. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0083,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0561,Temperature logger failed and vaccine cartons may be spoiled. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0065,Package was wet and torn during unloading at West Gate. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0525,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0378,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0008,Cold-chain alert: cargo became warm during transfer at West Gate.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0404,Delivery requires a signature but the proof-of-delivery form is blank. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0227,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0057,Cold-chain alert: cargo became warm during transfer at West Gate. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0346,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0489,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0357,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0443,Package was wet and torn during unloading at Airport Warehouse. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0333,Shipment was sent to the wrong depot in Central Yard.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0205,Package was wet and torn during unloading at Airport Warehouse. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0694,Reefer sensor shows 5 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0073,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0509,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0148,Reefer sensor shows 8 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0198,Pallet arrived crushed; 9 cartons are damaged and one is leaking.,DAMAGE,true,synthetic_template_v1
+SYN-0101,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0297,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0613,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0596,Cold-chain alert: cargo became warm during transfer at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0316,Cold-chain alert: cargo became warm during transfer at North Hub. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0639,Package was wet and torn during unloading at West Gate. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0708,Cold-chain alert: cargo became warm during transfer at Airport Warehouse. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0645,Reefer sensor shows 8 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0447,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0552,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0264,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0028,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0212,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0054,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0491,Reefer sensor shows 17 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0319,Shipment was sent to the wrong depot in North Hub. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0554,Reefer sensor shows 9 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0717,Truck is late after traffic near West Gate; ETA moved by 8 hours.,DELAY,false,synthetic_template_v1
+SYN-0307,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0123,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0137,Shipment was sent to the wrong depot in Harbor Depot. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0683,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0163,Forklift impact broke the outer crate; contents require inspection. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0277,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0258,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0179,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0387,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0534,Pallet arrived crushed; 2 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0234,Truck is late after traffic near West Gate; ETA moved by 16 hours.,DELAY,false,synthetic_template_v1
+SYN-0417,Shipment was sent to the wrong depot in North Hub. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0170,Pallet arrived crushed; 7 cartons are damaged and one is leaking. Driver has notified dispatch.,DAMAGE,true,synthetic_template_v1
+SYN-0627,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0091,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0129,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0348,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0359,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0444,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0636,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0570,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0494,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0476,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0633,Truck is late after traffic near Harbor Depot; ETA moved by 7 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0151,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0695,Package was wet and torn during unloading at Airport Warehouse.,DAMAGE,false,synthetic_template_v1
+SYN-0471,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0616,General inquiry about packaging options for a future shipment. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0146,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0516,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0448,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0282,Package was wet and torn during unloading at West Gate.,DAMAGE,false,synthetic_template_v1
+SYN-0075,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0351,Reefer sensor shows 3 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0699,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0617,Reefer sensor shows 3 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0385,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0460,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0051,Package was wet and torn during unloading at Harbor Depot. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0518,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0658,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0559,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0688,Pallet arrived crushed; 4 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0369,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0405,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0611,Package was wet and torn during unloading at Airport Warehouse. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0254,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0632,Package was wet and torn during unloading at Harbor Depot. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0009,Package was wet and torn during unloading at West Gate. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0194,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0337,Temperature logger failed and vaccine cartons may be spoiled. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0276,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0283,Shipment missed the connection and is stuck at the transfer depot.,DELAY,false,synthetic_template_v1
+SYN-0196,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0493,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0541,Pallet arrived crushed; 16 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0607,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0352,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0568,Reefer sensor shows 17 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0315,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0531,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0158,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0584,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0134,Cold-chain alert: cargo became warm during transfer at Central Yard. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0693,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0068,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0117,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0638,Cold-chain alert: cargo became warm during transfer at Airport Warehouse. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0058,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0672,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0218,Cold-chain alert: cargo became warm during transfer at Central Yard. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0288,Temperature logger failed and vaccine cartons may be spoiled.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0585,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0577,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0698,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0496,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0019,Delivery requires a signature but the proof-of-delivery form is blank. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0711,Shipment was sent to the wrong depot in Airport Warehouse. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0261,Pallet arrived crushed; 18 cartons are damaged and one is leaking.,DAMAGE,true,synthetic_template_v1
+SYN-0060,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0242,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0666,Reefer sensor shows 17 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0226,Pallet arrived crushed; 4 cartons are damaged and one is leaking. Logged by operations.,DAMAGE,true,synthetic_template_v1
+SYN-0066,Truck is late after traffic near Central Yard; ETA moved by 4 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0716,Pallet arrived crushed; 7 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0386,Reefer sensor shows 18 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0355,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0087,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0382,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0079,Pallet arrived crushed; 3 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0253,Cold-chain alert: cargo became warm during transfer at Harbor Depot. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0373,Pallet arrived crushed; 17 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0246,Cold-chain alert: cargo became warm during transfer at West Gate. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0040,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0175,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0569,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0202,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0010,Truck is late after traffic near Central Yard; ETA moved by 13 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0367,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0389,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0363,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0582,Reefer sensor shows 12 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0098,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0667,Pallet arrived crushed; 14 cartons are damaged and one is leaking. Driver has notified dispatch.,DAMAGE,true,synthetic_template_v1
+SYN-0004,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0703,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0452,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0451,Truck is late after traffic near West Gate; ETA moved by 15 hours. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0340,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0113,Reefer sensor shows 18 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0461,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0558,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0375,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0120,Reefer sensor shows 5 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0104,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0236,Delivery requires a signature but the proof-of-delivery form is blank. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0318,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0701,Cold-chain alert: cargo became warm during transfer at West Gate. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0018,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0115,Truck is late after traffic near Central Yard; ETA moved by 8 hours.,DELAY,false,synthetic_template_v1
+SYN-0003,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0072,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0441,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0303,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0523,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0228,Shipment was sent to the wrong depot in North Hub. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0089,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0581,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0440,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0025,Shipment was sent to the wrong depot in North Hub. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0709,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0259,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0677,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0238,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0084,General inquiry about packaging options for a future shipment. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0026,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0601,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0433,Border agent requested a tariff code before releasing the shipment. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0391,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0266,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0648,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0468,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0046,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0652,Cold-chain alert: cargo became warm during transfer at Harbor Depot. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0506,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0539,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0393,Reefer sensor shows 13 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0116,Label contains an incorrect destination and parcel is misrouted.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0302,Reefer sensor shows 3 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0510,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0245,General inquiry about packaging options for a future shipment. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0221,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0437,Truck is late after traffic near Harbor Depot; ETA moved by 4 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0650,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0589,Temperature logger failed and vaccine cartons may be spoiled.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0022,Reefer sensor shows 10 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0538,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0020,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0626,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0465,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0141,Reefer sensor shows 18 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0412,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0096,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0450,Package was wet and torn during unloading at Harbor Depot. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0533,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0513,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0286,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0321,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0213,Carrier reported a delay; delivery is now expected tomorrow. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0095,Shipment was sent to the wrong depot in North Hub. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0185,Shipment missed the connection and is stuck at the transfer depot. Please advise.,DELAY,false,synthetic_template_v1
+SYN-0005,Commercial invoice is missing from the document pouch. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0599,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0339,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0623,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0063,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0041,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0484,Temperature logger failed and vaccine cartons may be spoiled.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0154,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0515,Driver reports the wrong address on the delivery instruction. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0490,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0522,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0309,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0187,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0536,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0406,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0345,Package was wet and torn during unloading at Airport Warehouse. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0273,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0682,Shipment missed the connection and is stuck at the transfer depot. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0604,Package was wet and torn during unloading at West Gate.,DAMAGE,false,synthetic_template_v1
+SYN-0504,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0719,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0147,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0035,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0392,General inquiry about packaging options for a future shipment. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0356,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0310,Forklift impact broke the outer crate; contents require inspection. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0526,Temperature logger failed and vaccine cartons may be spoiled. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0061,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0231,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0222,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0135,Pallet arrived crushed; 15 cartons are damaged and one is leaking.,DAMAGE,true,synthetic_template_v1
+SYN-0347,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0249,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0308,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0659,Temperature logger failed and vaccine cartons may be spoiled. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0350,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0265,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0499,Package was wet and torn during unloading at Harbor Depot. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0665,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0138,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0016,Pallet arrived crushed; 9 cartons are damaged and one is leaking. Driver has notified dispatch.,DAMAGE,true,synthetic_template_v1
+SYN-0475,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0713,Customs placed the cargo on hold pending inspection at the border. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0100,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0556,Truck is late after traffic near North Hub; ETA moved by 10 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0514,Truck is late after traffic near Central Yard; ETA moved by 10 hours. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0594,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0111,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0081,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0260,Reefer sensor shows 9 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0152,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0039,Label contains an incorrect destination and parcel is misrouted. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0485,Pallet arrived crushed; 9 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0299,Delivery requires a signature but the proof-of-delivery form is blank. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0188,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0687,Cold-chain alert: cargo became warm during transfer at Harbor Depot.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0714,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0395,Truck is late after traffic near Harbor Depot; ETA moved by 17 hours. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0574,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0371,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0377,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0306,Delivery requires a signature but the proof-of-delivery form is blank. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0583,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0275,Package was wet and torn during unloading at Airport Warehouse. Logged by operations.,DAMAGE,false,synthetic_template_v1
+SYN-0630,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0663,Manifest number does not match the paperwork for the shipment. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0030,Package was wet and torn during unloading at Harbor Depot. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0210,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0130,Shipment was sent to the wrong depot in Central Yard. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0133,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0295,Cold-chain alert: cargo became warm during transfer at West Gate. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0718,Shipment was sent to the wrong depot in Harbor Depot. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0165,Shipment was sent to the wrong depot in North Hub.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0438,Shipment was sent to the wrong depot in West Gate. Please advise.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0055,Border agent requested a tariff code before releasing the shipment.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0166,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0225,Reefer sensor shows 7 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0379,Reefer sensor shows 10 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0696,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0411,Commercial invoice is missing from the document pouch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0107,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0435,Reefer sensor shows 2 celsius above the permitted range for medicine shipment. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0519,Cold-chain alert: cargo became warm during transfer at Central Yard. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0449,Cold-chain alert: cargo became warm during transfer at Airport Warehouse. Driver has notified dispatch.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0621,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0588,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0524,Customs placed the cargo on hold pending inspection at the border. Please advise.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0067,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0692,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0544,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0434,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0235,Shipment was sent to the wrong depot in Harbor Depot. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0241,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0637,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0043,Reefer sensor shows 12 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0532,Warehouse requests confirmation of reusable container ownership. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0208,Delivery requires a signature but the proof-of-delivery form is blank.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0431,Label contains an incorrect destination and parcel is misrouted. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0190,Reefer sensor shows 11 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0684,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0580,Border agent requested a tariff code before releasing the shipment. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0527,Forklift impact broke the outer crate; contents require inspection. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0622,Customs placed the cargo on hold pending inspection at the border. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0317,Pallet arrived crushed; 11 cartons are damaged and one is leaking.,DAMAGE,true,synthetic_template_v1
+SYN-0503,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0014,Customer asked to update the preferred delivery window. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0048,Border agent requested a tariff code before releasing the shipment. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0064,Temperature logger failed and vaccine cartons may be spoiled. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0099,Reefer sensor shows 9 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0034,Clearance is blocked because the duty declaration is incomplete. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0290,Carrier reported a delay; delivery is now expected tomorrow.,DELAY,false,synthetic_template_v1
+SYN-0618,Package was wet and torn during unloading at Airport Warehouse.,DAMAGE,false,synthetic_template_v1
+SYN-0056,General inquiry about packaging options for a future shipment. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0512,Cold-chain alert: cargo became warm during transfer at West Gate.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0274,Reefer sensor shows 14 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0324,Package was wet and torn during unloading at West Gate. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0661,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0553,Customer asked to update the preferred delivery window. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0252,General inquiry about packaging options for a future shipment. Logged by operations.,OTHER,false,synthetic_template_v1
+SYN-0021,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0247,Package was wet and torn during unloading at Central Yard. Please advise.,DAMAGE,false,synthetic_template_v1
+SYN-0229,Commercial invoice is missing from the document pouch. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0329,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0551,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0707,Customer asked to update the preferred delivery window.,OTHER,false,synthetic_template_v1
+SYN-0093,Pallet arrived crushed; 3 cartons are damaged and one is leaking.,DAMAGE,true,synthetic_template_v1
+SYN-0697,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0049,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0459,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0634,Driver reports the wrong address on the delivery instruction. Logged by operations.,WRONG_DESTINATION,false,synthetic_template_v1
+SYN-0164,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0360,Carrier reported a delay; delivery is now expected tomorrow. Driver has notified dispatch.,DELAY,false,synthetic_template_v1
+SYN-0609,Customer asked to update the preferred delivery window. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0268,Pallet arrived crushed; 10 cartons are damaged and one is leaking. Please advise.,DAMAGE,true,synthetic_template_v1
+SYN-0619,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0419,Customs placed the cargo on hold pending inspection at the border. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0610,Temperature logger failed and vaccine cartons may be spoiled. Please advise.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0153,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0007,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,false,synthetic_template_v1
+SYN-0671,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0327,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0159,Commercial invoice is missing from the document pouch. Logged by operations.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0492,Package was wet and torn during unloading at Harbor Depot. Driver has notified dispatch.,DAMAGE,false,synthetic_template_v1
+SYN-0715,Cold-chain alert: cargo became warm during transfer at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0567,Warehouse requests confirmation of reusable container ownership.,OTHER,false,synthetic_template_v1
+SYN-0045,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0070,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,false,synthetic_template_v1
+SYN-0555,Package was wet and torn during unloading at Central Yard.,DAMAGE,false,synthetic_template_v1
+SYN-0625,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,false,synthetic_template_v1
+SYN-0432,Manifest number does not match the paperwork for the shipment. Driver has notified dispatch.,DOCUMENTATION,false,synthetic_template_v1
+SYN-0125,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0038,Carrier reported a delay; delivery is now expected tomorrow. Logged by operations.,DELAY,false,synthetic_template_v1
+SYN-0176,Reefer sensor shows 16 celsius above the permitted range for medicine shipment.,TEMPERATURE_EXCURSION,true,synthetic_template_v1
+SYN-0399,General inquiry about packaging options for a future shipment.,OTHER,false,synthetic_template_v1
+SYN-0237,Clearance is blocked because the duty declaration is incomplete.,CUSTOMS_HOLD,false,synthetic_template_v1
+SYN-0181,Customs placed the cargo on hold pending inspection at the border. Driver has notified dispatch.,CUSTOMS_HOLD,false,synthetic_template_v1

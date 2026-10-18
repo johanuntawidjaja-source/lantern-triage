@@ -1,0 +1,16 @@
+[
+  {
+    "policy": "original",
+    "threshold": 0.86,
+    "human_review_count": 44,
+    "urgent_misses": 0,
+    "costly_misroutes": 0
+  },
+  {
+    "policy": "stricter_human_review",
+    "threshold": 0.92,
+    "human_review_count": 109,
+    "urgent_misses": 0,
+    "costly_misroutes": 0
+  }
+]
