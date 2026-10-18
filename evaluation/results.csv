@@ -1,3 +1,3 @@
 approach,test_reports,coverage,accuracy_when_decided,abstentions,urgent_misses,costly_misroutes,p50_latency_ms,estimated_cost_usd_per_1000
-keyword_baseline,160,0.76875,0.9512195121951219,37,6,0,0.004899993655271828,0.0
-naive_bayes_with_abstention,160,0.725,1.0,44,0,0,0.01630000042496249,0.0
+keyword_baseline,160,0.76875,0.9512195121951219,37,6,0,0.004699999408330768,0.0
+naive_bayes_with_abstention,160,0.725,1.0,44,0,0,0.014500001270789653,0.0

@@ -10,15 +10,14 @@ routing urgent cases, and abstaining to human review when confidence is low.
 - **Working system:** browser demo in `web/`; no API key or server required.
 - **Documented data:** 720 deterministic, fictional reports; provenance in
   [`data/DATA_CARD.md`](data/DATA_CARD.md).
-- **Independent review pass:** 60 records in `data/review_sample.csv` were selected
-  independently from predictions and checked against the written taxonomy. This is
-  disclosed as AI-assisted secondary review, not external human validation.
+- **Independent review:** 50 blinded human labels are recorded in
+  `data/human_review.csv` and verified separately before comparison.
 - **Two approaches:** transparent keyword baseline and multinomial Naive Bayes.
 - **Evaluation:** accuracy-on-decided-cases, coverage/abstention, urgent misses,
   costly misroutes, latency, and cost.
-- **Changed requirement:** a stricter review threshold raises human-review load
-  from 44 to 109 of 160 test reports while retaining zero urgent misses on this
-  synthetic test split.
+- **Changed requirements:** a stricter review threshold raises human-review load
+  from 44 to 109 of 160 test reports. A separate before/after experiment introduces
+  a new customs queue and measures its effect on customs misroutes.
 - **Business case:** [`BUSINESS_SUMMARY.md`](BUSINESS_SUMMARY.md).
 
 ## Results
@@ -32,15 +31,34 @@ These results are deliberately not presented as production accuracy: the dataset
 synthetic and templated. Their value is reproducibility and demonstration of the
 evaluation method. See [`evaluation/ERROR_ANALYSIS.md`](evaluation/ERROR_ANALYSIS.md).
 
+### Independent label review
+
+The repository owner classified 50 reports without seeing their generated labels
+or model predictions. All 50 decisions agreed with the reference labels. This shows
+that the template labels are internally clear; it does not substitute for review by
+logistics specialists on real, de-identified reports. See
+[`evaluation/HUMAN_REVIEW.md`](evaluation/HUMAN_REVIEW.md).
+
+### Changed requirements
+
+| Change | Before | After | Operational effect |
+|---|---:|---:|---|
+| Confidence threshold 0.86 → 0.92 | 44 human reviews | 109 human reviews | Higher caution substantially increases dispatcher workload |
+| Add `CUSTOMS_HOLD` queue | 0% customs direct-route recall; 24 misroutes | 100% recall; 0 misroutes | New queue captures all 24 synthetic customs cases |
+
+The perfect after-result reflects the clean templates and must not be extrapolated
+to production. The scripts preserve the experiment so it can be repeated on better data.
+
 ## Run locally
 
 Python 3.10+ is sufficient; there are no third-party Python dependencies.
 
 ```bash
 python scripts/generate_data.py
-python scripts/review_sample.py
 python scripts/evaluate.py
 python scripts/changed_requirement.py
+python scripts/new_category_experiment.py
+python scripts/verify_human_review.py
 python -m unittest discover -s tests -v
 python -m http.server 8000
 ```
@@ -51,8 +69,8 @@ Then open `http://localhost:8000/web/`.
 
 - `web/` — static interactive demo and exported model
 - `src/triage.py` — baseline and candidate model
-- `scripts/` — deterministic generation, review sample, evaluation, policy change
-- `data/` — synthetic reports, review worksheet, dataset card
+- `scripts/` — deterministic generation, evaluation, and policy-change experiment
+- `data/` — synthetic reports, blinded human-review decisions, and dataset card
 - `evaluation/` — machine-readable results, taxonomy, and error analysis
 - `tests/` — fast regression tests
 
@@ -68,11 +86,11 @@ Then open `http://localhost:8000/web/`.
 ## Collaboration and AI disclosure
 
 The repository owner defined the product direction and accepted the final scope.
-OpenAI Codex was used to inspect earlier prototypes, generate the initial code and
-synthetic templates, run tests, perform a privacy scan, and critique the submission
+OpenAI Codex was used to generate the initial code and synthetic templates, run
+tests, perform a privacy scan, and critique the submission
 against the exam brief. All generated evidence is reproducible from the scripts.
-No private chat transcript, account credential, stock-trading record, or Cloudflare
-configuration is included in this repository.
+No private chat transcript, account credential, personal dataset, or unrelated
+project configuration is included in this repository.
 
 ## Limitations and next step
 

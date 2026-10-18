@@ -9,7 +9,7 @@ PATTERNS={
  "cloud_token":re.compile(r"(?i)(?:api[_-]?key|secret|bearer|password)\s*[:=]\s*['\"][^'\"]{8,}"),
  "email":re.compile(r"(?i)\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"),
  "windows_user_path":re.compile(r"(?i)\b[A-Z]:\\Users\\[^\\\s]+"),
- "cloudflare_id":re.compile(r"(?i)\b[0-9a-f]{32}\b"),
+ "opaque_cloud_identifier":re.compile(r"(?i)\b[0-9a-f]{32}\b"),
 }
 ALLOW_EMAIL={"person@example.test"}
 def files():
