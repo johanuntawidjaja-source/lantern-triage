@@ -2,17 +2,17 @@
   {
     "system": "legacy_six_category",
     "test_reports": 280,
-    "customs_reports": 44,
+    "customs_reports": 40,
     "customs_direct_route_recall": 0.0,
-    "overall_accuracy": 0.8392857142857143,
-    "costly_customs_misroutes": 44
+    "overall_accuracy": 0.8571428571428571,
+    "costly_customs_misroutes": 40
   },
   {
     "system": "updated_seven_category",
     "test_reports": 280,
-    "customs_reports": 44,
-    "customs_direct_route_recall": 1.0,
-    "overall_accuracy": 0.9928571428571429,
-    "costly_customs_misroutes": 0
+    "customs_reports": 40,
+    "customs_direct_route_recall": 0.55,
+    "overall_accuracy": 0.9357142857142857,
+    "costly_customs_misroutes": 18
   }
 ]

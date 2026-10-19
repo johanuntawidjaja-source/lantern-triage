@@ -1,0 +1,22 @@
+{
+  "seed": 20261019,
+  "method": "randomized compositional synthetic adversarial suite",
+  "results": [
+    {
+      "iteration": "guards_disabled_ablation",
+      "reports": 135,
+      "route_accuracy": 0.6074074074074074,
+      "urgent_accuracy": 0.8,
+      "dangerous_direct_routes": 34,
+      "clear_correct_routes": 51
+    },
+    {
+      "iteration": "revised_guarded_system",
+      "reports": 135,
+      "route_accuracy": 0.8148148148148148,
+      "urgent_accuracy": 0.9851851851851852,
+      "dangerous_direct_routes": 0,
+      "clear_correct_routes": 45
+    }
+  ]
+}

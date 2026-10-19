@@ -8,9 +8,9 @@ from src.triage import NaiveBayes
 with (ROOT/"data"/"incidents.csv").open(encoding="utf-8") as f: rows=list(csv.DictReader(f))
 model=NaiveBayes().fit(rows[:560]); test=rows[560:]
 result=[]
-for threshold in (0.80,0.95):
+for threshold in (0.95,0.99):
     pred=[model.predict(r["report_text"],threshold) for r in test]
-    result.append({"policy":"original" if threshold==.80 else "stricter_human_review",
+    result.append({"policy":"original" if threshold==.95 else "stricter_human_review",
       "threshold":threshold,"human_review_count":sum(p["abstain"] for p in pred),
       "urgent_misses":sum(r["urgent"]=="true" and not p["urgent"] for r,p in zip(test,pred)),
       "costly_misroutes":sum(r["category"] in {"TEMPERATURE_EXCURSION","CUSTOMS_HOLD"} and not p["abstain"] and p["category"]!=r["category"] for r,p in zip(test,pred))})

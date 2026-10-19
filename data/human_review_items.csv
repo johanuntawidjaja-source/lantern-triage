@@ -1,0 +1,51 @@
+incident_id,report_text,reference_label,reviewed_label
+SYN-0071,Cold chain broken. Please advise.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0394,Carton ripped open. Please advise.,DAMAGE,DAMAGE
+SYN-0591,Shipmnt delyed by 15 hours. Driver has notified dispatch.,DELAY,DELAY
+SYN-0550,Shipment was sent to the wrong depot in North Hub.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0271,Manfest error blocks dispatch. Driver has notified dispatch.,DOCUMENTATION,DOCUMENTATION
+SYN-0720,Held at customs. Driver has notified dispatch.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0427,Warehouse requests confirmation of reusable container ownership. Please advise.,OTHER,OTHER
+SYN-0436,Damagd parcel received. Please advise.,DAMAGE,DAMAGE
+SYN-0325,Shipmnt delyed by 13 hours.,DELAY,DELAY
+SYN-0635,Delivery requires a signature but the proof-of-delivery form is blank. Please advise.,DOCUMENTATION,DOCUMENTATION
+SYN-0195,Clearance is blocked because the duty declaration is incomplete. Please advise.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0322,General inquiry about packaging options for a future shipment. Please advise.,OTHER,OTHER
+SYN-0106,Cold chain broken.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0606,Shipment was sent to the wrong depot in Harbor Depot.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0082,Manfest error blocks dispatch. Logged by operations.,DOCUMENTATION,DOCUMENTATION
+SYN-0177,Goods arrived dented at Central Yard. Please advise.,DAMAGE,DAMAGE
+SYN-0521,Delivery late. Driver has notified dispatch.,DELAY,DELAY
+SYN-0686,Change delivery window. Please advise.,OTHER,OTHER
+SYN-0174,Cargo detained for duty review. Please advise.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0267,Reefer sensor shows 9 celsius above the permitted range for medicine shipment. Please advise.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0281,Cold chain broken.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0415,Pallet arrived crushed; 12 cartons are damaged and one is leaking. Please advise.,DAMAGE,DAMAGE
+SYN-0059,ETA slipped again at Airport Warehouse. Driver has notified dispatch.,DELAY,DELAY
+SYN-0410,Driver reports the wrong address on the delivery instruction. Driver has notified dispatch.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0012,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,DOCUMENTATION
+SYN-0244,Border release refused. Logged by operations.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0105,Customer asked to update the preferred delivery window.,OTHER,OTHER
+SYN-0358,Tempature alarm on chilled cargo. Please advise.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0464,Damagd parcel received.,DAMAGE,DAMAGE
+SYN-0710,ETA slipped again at North Hub.,DELAY,DELAY
+SYN-0361,Label contains an incorrect destination and parcel is misrouted. Driver has notified dispatch.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0502,Manfest error blocks dispatch.,DOCUMENTATION,DOCUMENTATION
+SYN-0118,Clearance is blocked because the duty declaration is incomplete. Logged by operations.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0294,Warehouse requests confirmation of reusable container ownership. Driver has notified dispatch.,OTHER,OTHER
+SYN-0211,Reefer sensor shows 12 celsius above the permitted range for medicine shipment. Logged by operations.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0002,Box smashed in transit. Driver has notified dispatch.,DAMAGE,DAMAGE
+SYN-0423,Shipment missed the connection and is stuck at the transfer depot. Logged by operations.,DELAY,DELAY
+SYN-0144,Driver reports the wrong address on the delivery instruction.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0103,Manifest number does not match the paperwork for the shipment.,DOCUMENTATION,DOCUMENTATION
+SYN-0685,Customs clerance pending. Please advise.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0413,Please call customer. Please advise.,OTHER,OTHER
+SYN-0155,Frozen goods are thawing at Central Yard.,TEMPERATURE_EXCURSION,TEMPERATURE_EXCURSION
+SYN-0646,Forklift impact broke the outer crate; contents require inspection.,DAMAGE,DAMAGE
+SYN-0311,Truck overdue. Logged by operations.,DELAY,DELAY
+SYN-0368,Delivered to another warehouse. Driver has notified dispatch.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0110,Manifest number does not match the paperwork for the shipment. Logged by operations.,DOCUMENTATION,DOCUMENTATION
+SYN-0566,Customs placed the cargo on hold pending inspection at the border.,CUSTOMS_HOLD,CUSTOMS_HOLD
+SYN-0140,Packaging question. Driver has notified dispatch.,OTHER,OTHER
+SYN-0326,Shipment was sent to the wrong depot in North Hub. Please advise.,WRONG_DESTINATION,WRONG_DESTINATION
+SYN-0705,No signed delivery note.,DOCUMENTATION,DOCUMENTATION

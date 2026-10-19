@@ -16,6 +16,11 @@ baseline, a probabilistic model,
 latency/cost/error measurements, and a changed-requirement experiment. The demo is
 browser-only and incurs no model/API cost.
 
+Two independent AI reviewers identified train/test leakage and unsafe edge cases in
+an earlier iteration. The revised evidence uses disjoint template families and two
+reproducible randomized adversarial runs; the original critiques and response are
+preserved in `evaluation/`.
+
 ## Business value
 The expected benefit is faster first response and fewer high-cost misroutes. The
 right pilot metric is not raw accuracy alone: measure urgent recall, costly

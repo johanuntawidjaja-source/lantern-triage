@@ -7,10 +7,10 @@ model. The subword features improve tolerance of short reports and typing errors
 but the synthetic templates still make its scores look better than production
 performance will be.
 
-The separate robustness suite directly routes 29 of 35 clear short/synonym/typo
-cases correctly; the remaining six abstain rather than misroute. All seven
-deliberately vague cases go to human review. These cases were created as an explicit
-challenge set and are not evidence of field performance.
+The fixed robustness suite and randomized adversarial generator test short reports,
+synonyms, typos, vague language, safety events, and negated/resolved incidents. The
+two recorded random seeds show that safety/negation guards eliminate dangerous
+direct routes in those synthetic runs. They are not evidence of field performance.
 
 Costly errors are counted separately for temperature and customs incidents because
 misrouting them may spoil goods or miss regulatory deadlines. Low-confidence cases

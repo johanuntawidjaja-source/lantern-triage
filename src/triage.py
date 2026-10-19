@@ -17,18 +17,28 @@ KEYWORDS = {
     "DAMAGE": ["damaged", "broken", "crushed", "leaking", "wet", "torn"],
     "DELAY": ["late", "delay", "missed", "stuck", "eta", "traffic"],
     "WRONG_DESTINATION": ["wrong address", "wrong depot", "misrouted", "incorrect destination"],
-    "DOCUMENTATION": ["invoice", "document", "paperwork", "manifest", "signature", "permit"],
-    "CUSTOMS_HOLD": ["customs", "border", "inspection", "duty", "tariff", "clearance"],
+    "DOCUMENTATION": ["invoice", "document", "paperwork", "manifest", "manfest", "signature", "permit"],
+    "CUSTOMS_HOLD": ["customs", "border", "inspection", "duty", "tariff", "clearance", "import", "export", "detained"],
 }
 
 URGENT_TERMS = [
     "urgent", "critical", "hospital", "medicine", "vaccine", "spoiled",
     "leaking", "hazard", "fire", "24 hours", "today", "immediately",
+    "frozen", "thawing", "chiller", "cooling", "reefer",
 ]
-AMBIGUOUS_PHRASES = [
-    "something went wrong", "shipment issue", "please investigate", "problem at hub",
-    "cargo needs attention", "status unclear", "operator requested help",
-]
+SAFETY_TERMS = ["injured", "injury", "unconscious", "crash", "collision", "fire",
+                "spill", "hazardous", "hazmat", "toxic", "theft", "stolen"]
+GENERIC_TERMS = ["issue", "problem", "investigate", "attention", "unclear", "help", "wrong"]
+NEGATION_TERMS = ["no", "not", "without", "resolved", "cleared", "safe", "safely"]
+
+def unnegated(text: str, term: str) -> bool:
+    words=re.findall(r"[a-z0-9]+",text); needle=term.split()
+    for i in range(len(words)-len(needle)+1):
+        if words[i:i+len(needle)]==needle:
+            before=words[max(0,i-4):i]
+            if "but" in before: before=before[before.index("but")+1:]
+            if not any(w in NEGATION_TERMS for w in before): return True
+    return False
 
 def tokens(text: str) -> list[str]:
     """Return word, word-bigram, and character-subword features."""
@@ -71,7 +81,7 @@ class NaiveBayes:
         self.totals = {label: sum(word_counts[label].values()) for label in self.labels}
         return self
 
-    def predict(self, text: str, threshold: float = 0.80) -> dict:
+    def predict(self, text: str, threshold: float = 0.95) -> dict:
         words = tokens(text)
         scored = {}
         size = max(1, len(self.vocab))
@@ -90,24 +100,37 @@ class NaiveBayes:
         category = max(probs, key=probs.get)
         confidence = probs[category]
         lower = text.lower()
-        urgent = category == "TEMPERATURE_EXCURSION" or any(term in lower for term in URGENT_TERMS)
-        generic_only = any(p in lower for p in AMBIGUOUS_PHRASES) and not any(
+        safety = any(unnegated(lower, term) for term in SAFETY_TERMS)
+        negated_or_resolved = any(term in lower.split() for term in NEGATION_TERMS)
+        generic_only = any(term in lower.split() for term in GENERIC_TERMS) and not any(
             anchor in lower for phrases in KEYWORDS.values() for anchor in phrases
         )
-        abstain = confidence < threshold or generic_only
+        anchor_labels={label for label,anchors in KEYWORDS.items() if any(a in lower for a in anchors)}
+        conflicting = bool(anchor_labels) and category not in anchor_labels
+        multi_issue = len(anchor_labels) > 1
+        unsupported = not bool(re.search(r"[a-z]", lower))
+        urgent = safety or any(unnegated(lower, term) for term in URGENT_TERMS) or \
+                 (category == "TEMPERATURE_EXCURSION" and not conflicting and not negated_or_resolved)
+        abstain = confidence < threshold or generic_only or safety or negated_or_resolved or conflicting or multi_issue or unsupported
+        reason = ("safety_escalation" if safety else "negated_or_resolved" if negated_or_resolved
+                  else "unsupported_language" if unsupported else "multi_issue" if multi_issue
+                  else "conflicting_signals" if conflicting
+                  else "ambiguous_language" if generic_only else
+                  "low_confidence" if confidence < threshold else None)
         return {"category": category, "urgent": urgent, "confidence": confidence,
                 "abstain": abstain, "route": "HUMAN_REVIEW" if abstain else category,
-                "abstain_reason": "ambiguous_language" if generic_only else
-                                   ("low_confidence" if confidence < threshold else None),
+                "abstain_reason": reason, "urgency_unknown": unsupported,
                 "probabilities": probs}
 
     def to_json(self, path: Path) -> None:
         payload = {"labels": self.labels, "priors": self.priors,
                    "counts": {k: dict(v) for k, v in self.counts.items()},
                    "totals": self.totals, "vocabSize": len(self.vocab),
-                   "urgentTerms": URGENT_TERMS, "threshold": 0.80,
-                   "ambiguousPhrases": AMBIGUOUS_PHRASES,
+                   "urgentTerms": URGENT_TERMS, "threshold": 0.95,
+                   "safetyTerms": SAFETY_TERMS, "genericTerms": GENERIC_TERMS,
+                   "negationTerms": NEGATION_TERMS,
                    "categoryAnchors": [a for phrases in KEYWORDS.values() for a in phrases],
+                   "keywordMap": KEYWORDS,
                    "temperature": 4.0,
                    "featureVersion": "word-char-ngram-v2"}
         path.write_text(json.dumps(payload, indent=2), encoding="utf-8")

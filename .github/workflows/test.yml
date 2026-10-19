@@ -10,6 +10,8 @@ jobs:
       - run: python scripts/generate_data.py
       - run: python scripts/evaluate.py
       - run: python scripts/robustness.py
+      - run: python scripts/randomized_evaluation.py --seed 20261019 --output evaluation/randomized-iteration-1.json
+      - run: python scripts/randomized_evaluation.py --seed 20261020 --output evaluation/randomized-iteration-2.json
       - run: python scripts/verify_human_review.py
       - run: python scripts/changed_requirement.py
       - run: python scripts/new_category_experiment.py

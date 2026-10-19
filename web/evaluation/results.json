@@ -2,23 +2,23 @@
   {
     "approach": "keyword_baseline",
     "test_reports": 190,
-    "coverage": 0.5631578947368421,
-    "accuracy_when_decided": 0.897196261682243,
-    "abstentions": 83,
-    "urgent_misses": 26,
-    "costly_misroutes": 4,
-    "p50_latency_ms": 0.004699999408330768,
+    "coverage": 0.33157894736842103,
+    "accuracy_when_decided": 1.0,
+    "abstentions": 127,
+    "urgent_misses": 9,
+    "costly_misroutes": 0,
+    "p50_latency_ms": 0.005599998985417187,
     "estimated_cost_usd_per_1000": 0.0
   },
   {
     "approach": "naive_bayes_with_abstention",
     "test_reports": 190,
-    "coverage": 0.9947368421052631,
-    "accuracy_when_decided": 0.9947089947089947,
-    "abstentions": 1,
+    "coverage": 0.8105263157894737,
+    "accuracy_when_decided": 1.0,
+    "abstentions": 36,
     "urgent_misses": 0,
     "costly_misroutes": 0,
-    "p50_latency_ms": 0.10095000470755622,
+    "p50_latency_ms": 0.21009999909438193,
     "estimated_cost_usd_per_1000": 0.0
   }
 ]

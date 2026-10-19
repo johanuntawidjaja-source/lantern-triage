@@ -60,19 +60,23 @@ TEMPLATES = {
 ]}
 
 PLACES = ["North Hub", "Harbor Depot", "Central Yard", "Airport Warehouse", "West Gate"]
-NOISE = ["", " Please advise.", " Driver has notified dispatch.", " Logged by operations."]
+TRAIN_CONTEXT = ["Logged at {place} during shift {n}.", "Operations at {place} opened case {n}.", "Dispatch recorded this at {place}, sequence {n}."]
+TEST_CONTEXT = ["Record {n} was filed from {place}.", "Entry {n} was logged at {place}."]
 
 def main():
-    rows=[]
-    cats=list(TEMPLATES)
+    rows=[]; cats=list(TEMPLATES); per_cat={c:0 for c in cats}
     for i in range(840):
-        cat=cats[i % len(cats)]
-        text=random.choice(TEMPLATES[cat]).format(n=random.randint(2,18), place=random.choice(PLACES))
-        text += random.choice(NOISE)
+        cat=cats[i % len(cats)]; j=per_cat[cat]; per_cat[cat]+=1
+        split="train" if i < 650 else "test"
+        family=TEMPLATES[cat][:5] if split=="train" else TEMPLATES[cat][5:]
+        place=PLACES[(j*3+i) % len(PLACES)]; n=(j % 97)+2
+        base=family[j % len(family)].format(n=n, place=place)
+        context=(TRAIN_CONTEXT if split=="train" else TEST_CONTEXT)[j % (3 if split=="train" else 2)]
+        text=f"{base} {context.format(n=j+1,place=place)}"
         urgent = cat in {"TEMPERATURE_EXCURSION"} or any(x in text.lower() for x in ["leaking", "spoiled", "medicine", "vaccine"])
         rows.append({"incident_id":f"SYN-{i+1:04d}","report_text":text,
-                     "category":cat,"urgent":str(urgent).lower(),"source":"synthetic_template_v2"})
-    random.shuffle(rows)
+                     "category":cat,"urgent":str(urgent).lower(),
+                     "source":f"synthetic_{split}_template_family_v3","split":split})
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", newline="", encoding="utf-8") as f:
         w=csv.DictWriter(f, fieldnames=rows[0].keys()); w.writeheader(); w.writerows(rows)
