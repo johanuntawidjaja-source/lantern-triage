@@ -8,6 +8,8 @@ routing urgent cases, and abstaining to human review when confidence is low.
 ## What the examiner can verify
 
 - **Working system:** browser demo in `web/`; no API key or server required.
+- **Transparent test lab:** the live UI can generate and display all 235 randomized
+  cases, expected labels, predictions, urgency decisions, pass/fail outcomes, and seed.
 - **Documented data:** 840 deterministic, fictional reports; provenance in
   [`data/DATA_CARD.md`](data/DATA_CARD.md).
 - **Blinded internal label check:** 50 human labels and the immutable texts actually
@@ -22,6 +24,8 @@ routing urgent cases, and abstaining to human review when confidence is low.
 - **Independent critiques:** complete examiner and logistics-expert reports, plus the
   revision response, are preserved in `evaluation/`.
 - **Business case:** [`BUSINESS_SUMMARY.md`](BUSINESS_SUMMARY.md).
+- **UI evaluation:** responsive and interaction review in
+  [`evaluation/UI_EVALUATION.md`](evaluation/UI_EVALUATION.md).
 
 ## Results
 
@@ -114,7 +118,7 @@ negation/resolution and conflict guards, and randomized adversarial testing.
 The latest two recorded 235-report randomized guard-ablation comparisons include
 unseen document types, misspellings, benign operational language, negation, safety,
 ambiguity, and cross-category distractors. The guarded system achieved 88.5% and
-82.1% route accuracy, 96.2% and 98.7% urgency accuracy, **0 false urgent flags**, and
+82.1% route accuracy, 98.7% and 99.6% urgency accuracy, **0 false urgent flags**, and
 **0 dangerous direct routes**. All 80 unseen/mutated documentation cases were either
 correctly routed or safely abstained. These remain synthetic stress tests, not a replay
 of an old commit or a production-performance claim.

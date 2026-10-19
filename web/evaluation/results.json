@@ -7,7 +7,7 @@
     "abstentions": 59,
     "urgent_misses": 0,
     "costly_misroutes": 5,
-    "p50_latency_ms": 0.00790000194683671,
+    "p50_latency_ms": 0.00809999619377777,
     "estimated_cost_usd_per_1000": 0.0
   },
   {
@@ -18,7 +18,7 @@
     "abstentions": 5,
     "urgent_misses": 0,
     "costly_misroutes": 0,
-    "p50_latency_ms": 0.6574500002898276,
+    "p50_latency_ms": 0.6649999995715916,
     "estimated_cost_usd_per_1000": 0.0
   }
 ]

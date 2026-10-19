@@ -25,7 +25,7 @@ URGENT_TERMS = [
     "urgent", "critical", "hospital", "medicine", "vaccine", "spoiled",
     "leaking", "hazard", "fire", "24 hours", "immediately",
     "thawing", "overheating", "temperature alarm", "cold chain broken",
-    "cooling failed", "cooling unit failed", "refrigeration failed", "refrigeration stopped", "reefer failed", "heating up",
+    "cooling failed", "cooling unit failed", "refrigeration failed", "refrigeration stopped", "reefer failed", "heating", "heating up",
 ]
 SAFETY_TERMS = ["injured", "injury", "unconscious", "crash", "collision", "fire",
                 "spill", "hazardous", "hazmat", "toxic", "theft", "stolen"]

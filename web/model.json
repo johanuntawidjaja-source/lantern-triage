@@ -7775,6 +7775,7 @@
     "refrigeration failed",
     "refrigeration stopped",
     "reefer failed",
+    "heating",
     "heating up"
   ],
   "threshold": 0.95,

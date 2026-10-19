@@ -10,7 +10,7 @@
 <body>
   <header class="nav">
     <a class="brand" href="#top"><span class="mark">L</span><span>Lentera Triage</span></a>
-    <nav><a href="#method">Method</a><a href="#privacy">Privacy</a><a href="evaluation/results.json">Results</a></nav>
+    <nav><a href="#method">Method</a><a href="#test-lab">Test lab</a><a href="#privacy">Privacy</a><a href="evaluation/results.json">Results</a></nav>
   </header>
   <main id="top">
     <section class="hero">
@@ -50,9 +50,24 @@
       </div>
     </section>
 
+    <section id="test-lab" class="section test-lab">
+      <div class="section-intro"><div><p class="eyebrow">OPEN EVALUATION</p><h2>Run a fresh randomized stress test</h2></div>
+      <p>Generate 235 synthetic English incidents in your browser. Nothing is uploaded. Every case, expected result, prediction, and pass/fail decision remains visible below.</p></div>
+      <div class="test-console">
+        <div class="test-controls"><button id="run-random-test" class="primary">Run randomized test</button><p id="test-status" aria-live="polite">No test has been run in this session.</p></div>
+        <div id="test-results" hidden>
+          <div id="test-metrics" class="test-metrics"></div>
+          <p class="test-note">Synthetic stress tests reveal regressions; they do not establish production accuracy. A direct route must match exactly. Documentation routed to Documentation or Human review is also counted as safely handled.</p>
+          <details class="case-disclosure" open><summary>All 235 generated cases and outcomes</summary>
+            <div class="case-table-wrap"><table class="case-table"><thead><tr><th>#</th><th>Test slice</th><th>Generated incident</th><th>Expected</th><th>Actual</th><th>Urgency</th><th>Result</th></tr></thead><tbody id="test-cases"></tbody></table></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section id="privacy" class="section privacy"><div><p class="eyebrow">PRIVACY</p><h2>No report text leaves this page.</h2></div><p>The model runs locally in the browser. There is no login, API call, analytics SDK, or server-side report storage in this demonstration. Refreshing clears the text box.</p></section>
   </main>
   <footer>Lentera Triage · Demonstration system · Human operators retain control</footer>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body></html>
 

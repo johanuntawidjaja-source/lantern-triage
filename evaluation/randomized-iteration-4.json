@@ -17,7 +17,7 @@
       "iteration": "revised_guarded_system",
       "reports": 235,
       "route_accuracy": 0.8212765957446808,
-      "urgent_accuracy": 0.9872340425531915,
+      "urgent_accuracy": 0.9957446808510638,
       "dangerous_direct_routes": 0,
       "false_urgent_flags": 0,
       "documentation_correct_or_reviewed": 40,
