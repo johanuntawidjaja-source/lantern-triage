@@ -35,6 +35,26 @@ class TriageTests(unittest.TestCase):
     def test_unsupported_language_marks_unknown(self):
         p=self.model.predict("清关延误，疫苗正在变热")
         self.assertTrue(p["urgency_unknown"]); self.assertEqual(p["route"],"HUMAN_REVIEW")
+    def test_receipt_omission_is_documentation_not_temperature(self):
+        p=self.model.predict("Receipts have been omitted; informed parties involved.")
+        self.assertIn(p["route"], {"DOCUMENTATION", "HUMAN_REVIEW"})
+        self.assertEqual(p["category"], "DOCUMENTATION")
+        self.assertFalse(p["urgent"])
+    def test_misspelled_receipt_is_not_temperature_or_urgent(self):
+        p=self.model.predict("REceiptts have been omitted, INformed parties involved.")
+        self.assertNotEqual(p["category"], "TEMPERATURE_EXCURSION")
+        self.assertFalse(p["urgent"])
+    def test_document_vocabulary(self):
+        for text in ["packing list omitted", "bill of lading incorrect", "air waybill absent",
+                     "certificate of origin expired", "proof of delivery unsigned",
+                     "import declaration incomplete", "health certificate missing"]:
+            with self.subTest(text=text):
+                p=self.model.predict(text)
+                self.assertEqual(p["category"], "DOCUMENTATION")
+                self.assertIn(p["route"], {"DOCUMENTATION", "HUMAN_REVIEW"})
+    def test_routine_notifications_are_not_urgent(self):
+        for text in ["informed parties involved", "all parties were informed", "consignee acknowledged the message"]:
+            with self.subTest(text=text): self.assertFalse(self.model.predict(text)["urgent"])
 
 if __name__=="__main__": unittest.main()
 

@@ -17,7 +17,7 @@ routing urgent cases, and abstaining to human review when confidence is low.
 - **Evaluation:** accuracy-on-decided-cases, coverage/abstention, urgent misses,
   costly misroutes, latency, and cost.
 - **Changed requirements:** a stricter review threshold raises human-review load
-  from 49 to 62 of 280 policy-test reports. A separate before/after experiment introduces
+  from 15 to 27 of 280 policy-test reports. A separate before/after experiment introduces
   a new customs queue and measures its effect on customs misroutes.
 - **Independent critiques:** complete examiner and logistics-expert reports, plus the
   revision response, are preserved in `evaluation/`.
@@ -27,8 +27,8 @@ routing urgent cases, and abstaining to human review when confidence is low.
 
 | Approach | Coverage | Accuracy when decided | Urgent misses | Costly misroutes | Median latency | Cost / 1,000 |
 |---|---:|---:|---:|---:|---:|---:|
-| Keyword baseline | 33.2% | 100% | 9 | 0 | ~0.006 ms | $0 |
-| Subword Naive Bayes + abstention | 81.1% | 100% | 0 | 0 | ~0.210 ms | $0 |
+| Keyword baseline | 68.9% | 96.2% | 0 | 5 | ~0.008 ms | $0 |
+| Subword Naive Bayes + vocabulary guards | 97.4% | 96.8% | 0 | 0 | ~0.66 ms | $0 |
 
 These results are deliberately not presented as production accuracy: the dataset is
 synthetic and templated. Their value is reproducibility and demonstration of the
@@ -54,8 +54,8 @@ dataset revisions cannot silently change what those decisions refer to.
 
 | Change | Before | After | Operational effect |
 |---|---:|---:|---|
-| Confidence threshold 0.95 → 0.99 | 49 human reviews | 62 human reviews | Higher caution increases dispatcher workload |
-| Add `CUSTOMS_HOLD` queue | 0% raw customs recall; 40 forced errors | 55% raw recall; 18 forced errors | New label helps, but held-out wording exposes remaining model limits |
+| Confidence threshold 0.95 → 0.99 | 15 human reviews | 27 human reviews | Higher caution increases dispatcher workload |
+| Add `CUSTOMS_HOLD` queue | 0% customs recall; 40 forced errors | 100% recall; 0 forced errors | New label plus explicit vocabulary covers this synthetic held-out set |
 
 The held-out result remains synthetic and must not be extrapolated to production.
 The scripts preserve the experiment so it can be repeated on better data.
@@ -69,8 +69,8 @@ python scripts/generate_data.py
 python scripts/evaluate.py
 python scripts/robustness.py
 python scripts/randomized_evaluation.py # fresh random seed
-python scripts/randomized_evaluation.py --seed 20261019 --output evaluation/randomized-iteration-1.json
-python scripts/randomized_evaluation.py --seed 20261020 --output evaluation/randomized-iteration-2.json
+python scripts/randomized_evaluation.py --seed 20261021 --output evaluation/randomized-iteration-3.json
+python scripts/randomized_evaluation.py --seed 20261022 --output evaluation/randomized-iteration-4.json
 python scripts/changed_requirement.py
 python scripts/new_category_experiment.py
 python scripts/verify_human_review.py
@@ -111,10 +111,13 @@ The reviewers found severe leakage and unsafe negation/safety behavior in commit
 `11a17be`. The revision introduced disjoint template families, safety escalation,
 negation/resolution and conflict guards, and randomized adversarial testing.
 
-Across two recorded 135-report randomized guard-ablation comparisons, route accuracy improved from
-60.7%→81.5% and 60.0%→88.1%; urgent accuracy improved from 80.0%→98.5% and
-79.3%→96.3%; dangerous direct routes fell from 34 and 38 to zero. These are synthetic
-stress tests, not a replay of the old commit or production performance claims.
+The latest two recorded 235-report randomized guard-ablation comparisons include
+unseen document types, misspellings, benign operational language, negation, safety,
+ambiguity, and cross-category distractors. The guarded system achieved 88.5% and
+82.1% route accuracy, 96.2% and 98.7% urgency accuracy, **0 false urgent flags**, and
+**0 dangerous direct routes**. All 80 unseen/mutated documentation cases were either
+correctly routed or safely abstained. These remain synthetic stress tests, not a replay
+of an old commit or a production-performance claim.
 
 ## Open references and provenance
 
@@ -124,6 +127,14 @@ deterministic and fictional. Open sources informed the terminology and model des
 - The [UN/CEFACT Multimodal Transport Status Request vocabulary](https://service.unece.org/trade/uncefact/publication/Transport-Logistics/MMT-TSR/HTML/058.htm)
   includes transport states such as damaged, delayed, and customs clearance; it was
   used as a terminology cross-check, not as a source of incident text.
+- The U.S. International Trade Administration's [Common Export Documents](https://www.trade.gov/common-export-documents)
+  and [Documents in an Export Transaction](https://www.trade.gov/documents-export-transaction)
+  identify commercial and pro-forma invoices, packing lists, air waybills, bills of
+  lading, certificates of origin, permits, declarations, and special certificates.
+  They informed the expanded vocabulary; no source sentence was copied as incident data.
+- WHO guidance on [temperature excursions during vaccine storage and transport](https://www.who.int/docs/default-source/coronaviruse/act-accelerator/covax/training-on-pfizer-vaccine-management.pdf)
+  informed the separation of an active cold-chain exception from routine mentions of
+  temperature-controlled cargo.
 - Bojanowski et al., [*Enriching Word Vectors with Subword Information*](https://aclanthology.org/Q17-1010/),
   motivate character n-grams for unseen and morphologically related words.
 - Joulin et al., [*Bag of Tricks for Efficient Text Classification*](https://aclanthology.org/E17-2068/),
@@ -148,8 +159,9 @@ project configuration is included in this repository.
 ## Limitations and next step
 
 The main limitation is domain validity: synthetic text is easier than real incident
-reports. A 42-case fixed robustness suite and two 135-case randomized adversarial
-runs test short reports, synonyms, typos, safety, negation, and ambiguity. The next
+reports. A 42-case fixed robustness suite and two 235-case randomized adversarial
+runs test short reports, expanded document terminology, synonyms, typos, benign hard
+negatives, safety, negation, ambiguity, and false urgency. The next
 step is a shadow-mode pilot using
 consented, de-identified data and two logistics operators for blinded label
 adjudication. Human dispatchers must retain final authority.

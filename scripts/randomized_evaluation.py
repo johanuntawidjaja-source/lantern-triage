@@ -18,6 +18,20 @@ SAFETY=["driver injured after collision", "fire inside the truck", "hazardous ch
 NEGATED=["no damage found after inspection", "delay was resolved safely", "no fire and no leak", "vaccine delivered safely at correct temperature"]
 AMBIG=["an operational issue needs checking", "please help with this shipment", "status remains unclear", "a problem needs attention"]
 CONTEXT=["at the coastal depot", "during the night shift", "after handover", "near the distribution hub"]
+DOCUMENT_TERMS=["receipt", "packing list", "bill of lading", "air waybill", "delivery note",
+ "proof of delivery", "certificate of origin", "health certificate", "import declaration",
+ "export declaration", "shipping instruction", "manifest", "permit", "licence"]
+DOCUMENT_FAULTS=["is missing", "was omitted", "has expired", "is unsigned", "has the wrong reference"]
+HARD_NEGATIVES=["all parties were informed", "consignee acknowledged the message",
+ "people involved received the update", "routine status was shared", "recipient was notified"]
+
+def typo(rng,text):
+    """Apply one reproducible transposition/deletion without using training text."""
+    words=text.split(); candidates=[i for i,w in enumerate(words) if len(w)>5]
+    if not candidates:return text
+    i=rng.choice(candidates); w=words[i]; j=rng.randrange(1,len(w)-1)
+    words[i]=w[:j]+w[j+1]+w[j]+w[j+2:] if rng.random()<.5 else w[:j]+w[j+1:]
+    return " ".join(words)
 
 def legacy(model,text):
     p=model.predict(text,threshold=0.95); lower=text.lower()
@@ -32,6 +46,15 @@ def build(rng):
     for _ in range(25): cases.append((f"{rng.choice(SAFETY)} {rng.choice(CONTEXT)}","HUMAN_REVIEW",True,"safety"))
     for _ in range(20): cases.append((f"{rng.choice(NEGATED)} {rng.choice(CONTEXT)}","HUMAN_REVIEW",False,"negated"))
     for _ in range(20): cases.append((f"{rng.choice(AMBIG)} {rng.choice(CONTEXT)}","HUMAN_REVIEW",False,"ambiguous"))
+    for _ in range(40):
+        text=f"{rng.choice(DOCUMENT_TERMS)} {rng.choice(DOCUMENT_FAULTS)} {rng.choice(CONTEXT)}"
+        if rng.random()<.5:text=typo(rng,text)
+        cases.append((text,"DOCUMENTATION",False,"documentation_unseen"))
+    for _ in range(25):
+        cases.append((f"{rng.choice(HARD_NEGATIVES)} {rng.choice(CONTEXT)}","HUMAN_REVIEW",False,"hard_negative"))
+    # Mutate otherwise clear reports to expose brittle exact-vocabulary behavior.
+    for label,phrases in CLEAR.items():
+        for _ in range(5): cases.append((typo(rng,f"{rng.choice(phrases)} {rng.choice(CONTEXT)}"),label,label=="TEMPERATURE_EXCURSION","typo"))
     rng.shuffle(cases); return cases
 
 def score(name,fn,cases):
@@ -40,6 +63,9 @@ def score(name,fn,cases):
       "route_accuracy":sum(p["route"]==route for p,(_,route,_,_) in zip(ps,cases))/len(cases),
       "urgent_accuracy":sum(p["urgent"]==urgent for p,(_,_,urgent,_) in zip(ps,cases))/len(cases),
       "dangerous_direct_routes":sum(slice_ in {"safety","negated","ambiguous"} and p["route"]!="HUMAN_REVIEW" for p,(_,_,_,slice_) in zip(ps,cases)),
+      "false_urgent_flags":sum(not urgent and p["urgent"] for p,(_,_,urgent,_) in zip(ps,cases)),
+      "documentation_correct_or_reviewed":sum(slice_=="documentation_unseen" and p["route"] in {"DOCUMENTATION","HUMAN_REVIEW"} for p,(_,_,_,slice_) in zip(ps,cases)),
+      "temperature_false_positives":sum(slice_ in {"documentation_unseen","hard_negative"} and p["route"]=="TEMPERATURE_EXCURSION" for p,(_,_,_,slice_) in zip(ps,cases)),
       "clear_correct_routes":sum(slice_=="clear" and p["route"]==route for p,(_,route,_,slice_) in zip(ps,cases))}
 
 def main():

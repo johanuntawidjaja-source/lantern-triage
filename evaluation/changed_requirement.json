@@ -2,14 +2,14 @@
   {
     "policy": "original",
     "threshold": 0.95,
-    "human_review_count": 49,
+    "human_review_count": 15,
     "urgent_misses": 0,
     "costly_misroutes": 0
   },
   {
     "policy": "stricter_human_review",
     "threshold": 0.99,
-    "human_review_count": 62,
+    "human_review_count": 27,
     "urgent_misses": 0,
     "costly_misroutes": 0
   }

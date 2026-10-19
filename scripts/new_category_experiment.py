@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv, json, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
+import src.triage as triage
 from src.triage import NaiveBayes
 
 with (ROOT/"data"/"incidents.csv").open(encoding="utf-8") as f:
@@ -22,7 +23,15 @@ def measure(name,model):
       "overall_accuracy":sum(r["category"]==p["category"] for r,p in zip(test,pred))/len(test),
       "costly_customs_misroutes":sum(p["category"]!="CUSTOMS_HOLD" for r,p in customs)}
 
-results=[measure("legacy_six_category",NaiveBayes().fit(legacy_train)),
-         measure("updated_seven_category",NaiveBayes().fit(train))]
+# Reproduce the old six-queue policy without allowing the new customs vocabulary
+# guard to leak into the legacy comparison.
+all_keywords=triage.KEYWORDS
+try:
+    triage.KEYWORDS={k:v for k,v in all_keywords.items() if k!="CUSTOMS_HOLD"}
+    legacy=measure("legacy_six_category",NaiveBayes().fit(legacy_train))
+finally:
+    triage.KEYWORDS=all_keywords
+updated=measure("updated_seven_category",NaiveBayes().fit(train))
+results=[legacy,updated]
 (ROOT/"evaluation"/"new_category.json").write_text(json.dumps(results,indent=2),encoding="utf-8")
 print(json.dumps(results,indent=2))

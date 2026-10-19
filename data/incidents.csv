@@ -6,7 +6,7 @@ SYN-0004,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Ai
 SYN-0005,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 1.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0006,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 1.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0007,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 1.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0008,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 2.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0008,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 2.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0009,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 2.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0010,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 2.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0011,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 2.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
@@ -20,14 +20,14 @@ SYN-0018,"Driver reports the wrong address on the delivery instruction. Dispatch
 SYN-0019,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 3.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0020,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 3.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0021,"General inquiry about packaging options for a future shipment. Dispatch recorded this at Harbor Depot, sequence 3.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0022,Reefer too warm. Logged at North Hub during shift 4.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0022,Reefer too warm. Logged at North Hub during shift 4.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0023,Shipment damaged. Logged at Harbor Depot during shift 4.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0024,Delivery late. Logged at Central Yard during shift 4.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0025,Sent to wrong place. Logged at Airport Warehouse during shift 4.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
 SYN-0026,Invoice missing. Logged at West Gate during shift 4.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0027,Held at customs. Logged at North Hub during shift 4.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0028,Please call customer. Logged at Harbor Depot during shift 4.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0029,Cold chain broken. Operations at North Hub opened case 5.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0029,Cold chain broken. Operations at North Hub opened case 5.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0030,Box smashed in transit. Operations at Harbor Depot opened case 5.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0031,Truck overdue. Operations at Central Yard opened case 5.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0032,Parcel at incorrect hub. Operations at Airport Warehouse opened case 5.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
@@ -38,245 +38,245 @@ SYN-0036,"Reefer sensor shows 7 celsius above the permitted range for medicine s
 SYN-0037,"Pallet arrived crushed; 7 cartons are damaged and one is leaking. Dispatch recorded this at Harbor Depot, sequence 6.",DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0038,"Truck is late after traffic near Central Yard; ETA moved by 7 hours. Dispatch recorded this at Central Yard, sequence 6.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0039,"Shipment was sent to the wrong depot in Airport Warehouse. Dispatch recorded this at Airport Warehouse, sequence 6.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0040,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 6.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0040,"Manfest error blocks dispatch. Dispatch recorded this at West Gate, sequence 6.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0041,"Customs placed the cargo on hold pending inspection at the border. Dispatch recorded this at North Hub, sequence 6.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0042,"Customer asked to update the preferred delivery window. Dispatch recorded this at Harbor Depot, sequence 6.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0043,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 7.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0043,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 7.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0044,Package was wet and torn during unloading at Harbor Depot. Logged at Harbor Depot during shift 7.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0045,Shipment missed the connection and is stuck at the transfer depot. Logged at Central Yard during shift 7.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0046,Label contains an incorrect destination and parcel is misrouted. Logged at Airport Warehouse during shift 7.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0047,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 7.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0047,No signed delivery note. Logged at West Gate during shift 7.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0048,Clearance is blocked because the duty declaration is incomplete. Logged at North Hub during shift 7.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0049,Warehouse requests confirmation of reusable container ownership. Logged at Harbor Depot during shift 7.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0050,Temperature logger failed and vaccine cartons may be spoiled. Operations at North Hub opened case 8.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0051,Forklift impact broke the outer crate; contents require inspection. Operations at Harbor Depot opened case 8.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0052,Carrier reported a delay; delivery is now expected tomorrow. Operations at Central Yard opened case 8.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0053,Driver reports the wrong address on the delivery instruction. Operations at Airport Warehouse opened case 8.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0054,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 8.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0054,Paperwork has the wrong reference. Operations at West Gate opened case 8.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0055,Border agent requested a tariff code before releasing the shipment. Operations at North Hub opened case 8.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0056,General inquiry about packaging options for a future shipment. Operations at Harbor Depot opened case 8.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0057,"Reefer too warm. Dispatch recorded this at North Hub, sequence 9.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0057,"Reefer too warm. Dispatch recorded this at North Hub, sequence 9.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0058,"Shipment damaged. Dispatch recorded this at Harbor Depot, sequence 9.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0059,"Delivery late. Dispatch recorded this at Central Yard, sequence 9.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0060,"Sent to wrong place. Dispatch recorded this at Airport Warehouse, sequence 9.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0061,"Invoice missing. Dispatch recorded this at West Gate, sequence 9.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0061,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 9.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0062,"Held at customs. Dispatch recorded this at North Hub, sequence 9.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0063,"Please call customer. Dispatch recorded this at Harbor Depot, sequence 9.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0064,Cold chain broken. Logged at North Hub during shift 10.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0064,Cold chain broken. Logged at North Hub during shift 10.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0065,Box smashed in transit. Logged at Harbor Depot during shift 10.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0066,Truck overdue. Logged at Central Yard during shift 10.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0067,Parcel at incorrect hub. Logged at Airport Warehouse during shift 10.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0068,Docs incomplete. Logged at West Gate during shift 10.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0068,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 10.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0069,Border release refused. Logged at North Hub during shift 10.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0070,Change delivery window. Logged at Harbor Depot during shift 10.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0071,Reefer sensor shows 12 celsius above the permitted range for medicine shipment. Operations at North Hub opened case 11.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0072,Pallet arrived crushed; 12 cartons are damaged and one is leaking. Operations at Harbor Depot opened case 11.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0073,Truck is late after traffic near Central Yard; ETA moved by 12 hours. Operations at Central Yard opened case 11.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0074,Shipment was sent to the wrong depot in Airport Warehouse. Operations at Airport Warehouse opened case 11.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0075,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 11.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0075,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 11.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0076,Customs placed the cargo on hold pending inspection at the border. Operations at North Hub opened case 11.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0077,Customer asked to update the preferred delivery window. Operations at Harbor Depot opened case 11.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0078,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 12.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0078,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 12.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0079,"Package was wet and torn during unloading at Harbor Depot. Dispatch recorded this at Harbor Depot, sequence 12.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0080,"Shipment missed the connection and is stuck at the transfer depot. Dispatch recorded this at Central Yard, sequence 12.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0081,"Label contains an incorrect destination and parcel is misrouted. Dispatch recorded this at Airport Warehouse, sequence 12.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0082,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 12.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0082,"Invoice missing. Dispatch recorded this at West Gate, sequence 12.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0083,"Clearance is blocked because the duty declaration is incomplete. Dispatch recorded this at North Hub, sequence 12.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0084,"Warehouse requests confirmation of reusable container ownership. Dispatch recorded this at Harbor Depot, sequence 12.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0085,Temperature logger failed and vaccine cartons may be spoiled. Logged at North Hub during shift 13.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0086,Forklift impact broke the outer crate; contents require inspection. Logged at Harbor Depot during shift 13.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0087,Carrier reported a delay; delivery is now expected tomorrow. Logged at Central Yard during shift 13.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0088,Driver reports the wrong address on the delivery instruction. Logged at Airport Warehouse during shift 13.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0089,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 13.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0089,Docs incomplete. Logged at West Gate during shift 13.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0090,Border agent requested a tariff code before releasing the shipment. Logged at North Hub during shift 13.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0091,General inquiry about packaging options for a future shipment. Logged at Harbor Depot during shift 13.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0092,Reefer too warm. Operations at North Hub opened case 14.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0092,Reefer too warm. Operations at North Hub opened case 14.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0093,Shipment damaged. Operations at Harbor Depot opened case 14.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0094,Delivery late. Operations at Central Yard opened case 14.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0095,Sent to wrong place. Operations at Airport Warehouse opened case 14.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0096,Invoice missing. Operations at West Gate opened case 14.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0096,Manfest error blocks dispatch. Operations at West Gate opened case 14.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0097,Held at customs. Operations at North Hub opened case 14.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0098,Please call customer. Operations at Harbor Depot opened case 14.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0099,"Cold chain broken. Dispatch recorded this at North Hub, sequence 15.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0099,"Cold chain broken. Dispatch recorded this at North Hub, sequence 15.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0100,"Box smashed in transit. Dispatch recorded this at Harbor Depot, sequence 15.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0101,"Truck overdue. Dispatch recorded this at Central Yard, sequence 15.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0102,"Parcel at incorrect hub. Dispatch recorded this at Airport Warehouse, sequence 15.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0103,"Docs incomplete. Dispatch recorded this at West Gate, sequence 15.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0103,"No signed delivery note. Dispatch recorded this at West Gate, sequence 15.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0104,"Border release refused. Dispatch recorded this at North Hub, sequence 15.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0105,"Change delivery window. Dispatch recorded this at Harbor Depot, sequence 15.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0106,Reefer sensor shows 17 celsius above the permitted range for medicine shipment. Logged at North Hub during shift 16.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0107,Pallet arrived crushed; 17 cartons are damaged and one is leaking. Logged at Harbor Depot during shift 16.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0108,Truck is late after traffic near Central Yard; ETA moved by 17 hours. Logged at Central Yard during shift 16.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0109,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Airport Warehouse during shift 16.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0110,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 16.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0110,Paperwork has the wrong reference. Logged at West Gate during shift 16.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0111,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 16.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0112,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 16.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0113,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 17.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0113,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 17.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0114,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 17.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0115,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 17.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0116,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 17.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0117,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 17.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0117,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 17.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0118,Clearance is blocked because the duty declaration is incomplete. Operations at North Hub opened case 17.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0119,Warehouse requests confirmation of reusable container ownership. Operations at Harbor Depot opened case 17.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0120,"Temperature logger failed and vaccine cartons may be spoiled. Dispatch recorded this at North Hub, sequence 18.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0121,"Forklift impact broke the outer crate; contents require inspection. Dispatch recorded this at Harbor Depot, sequence 18.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0122,"Carrier reported a delay; delivery is now expected tomorrow. Dispatch recorded this at Central Yard, sequence 18.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0123,"Driver reports the wrong address on the delivery instruction. Dispatch recorded this at Airport Warehouse, sequence 18.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0124,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 18.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0124,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 18.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0125,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 18.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0126,"General inquiry about packaging options for a future shipment. Dispatch recorded this at Harbor Depot, sequence 18.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0127,Reefer too warm. Logged at North Hub during shift 19.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0127,Reefer too warm. Logged at North Hub during shift 19.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0128,Shipment damaged. Logged at Harbor Depot during shift 19.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0129,Delivery late. Logged at Central Yard during shift 19.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0130,Sent to wrong place. Logged at Airport Warehouse during shift 19.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0131,Invoice missing. Logged at West Gate during shift 19.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0131,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 19.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0132,Held at customs. Logged at North Hub during shift 19.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0133,Please call customer. Logged at Harbor Depot during shift 19.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0134,Cold chain broken. Operations at North Hub opened case 20.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0134,Cold chain broken. Operations at North Hub opened case 20.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0135,Box smashed in transit. Operations at Harbor Depot opened case 20.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0136,Truck overdue. Operations at Central Yard opened case 20.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0137,Parcel at incorrect hub. Operations at Airport Warehouse opened case 20.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0138,Docs incomplete. Operations at West Gate opened case 20.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0138,Invoice missing. Operations at West Gate opened case 20.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0139,Border release refused. Operations at North Hub opened case 20.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0140,Change delivery window. Operations at Harbor Depot opened case 20.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0141,"Reefer sensor shows 22 celsius above the permitted range for medicine shipment. Dispatch recorded this at North Hub, sequence 21.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0142,"Pallet arrived crushed; 22 cartons are damaged and one is leaking. Dispatch recorded this at Harbor Depot, sequence 21.",DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0143,"Truck is late after traffic near Central Yard; ETA moved by 22 hours. Dispatch recorded this at Central Yard, sequence 21.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0144,"Shipment was sent to the wrong depot in Airport Warehouse. Dispatch recorded this at Airport Warehouse, sequence 21.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0145,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 21.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0145,"Docs incomplete. Dispatch recorded this at West Gate, sequence 21.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0146,"Customs placed the cargo on hold pending inspection at the border. Dispatch recorded this at North Hub, sequence 21.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0147,"Customer asked to update the preferred delivery window. Dispatch recorded this at Harbor Depot, sequence 21.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0148,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 22.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0148,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 22.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0149,Package was wet and torn during unloading at Harbor Depot. Logged at Harbor Depot during shift 22.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0150,Shipment missed the connection and is stuck at the transfer depot. Logged at Central Yard during shift 22.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0151,Label contains an incorrect destination and parcel is misrouted. Logged at Airport Warehouse during shift 22.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0152,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 22.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0152,Manfest error blocks dispatch. Logged at West Gate during shift 22.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0153,Clearance is blocked because the duty declaration is incomplete. Logged at North Hub during shift 22.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0154,Warehouse requests confirmation of reusable container ownership. Logged at Harbor Depot during shift 22.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0155,Temperature logger failed and vaccine cartons may be spoiled. Operations at North Hub opened case 23.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0156,Forklift impact broke the outer crate; contents require inspection. Operations at Harbor Depot opened case 23.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0157,Carrier reported a delay; delivery is now expected tomorrow. Operations at Central Yard opened case 23.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0158,Driver reports the wrong address on the delivery instruction. Operations at Airport Warehouse opened case 23.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0159,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 23.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0159,No signed delivery note. Operations at West Gate opened case 23.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0160,Border agent requested a tariff code before releasing the shipment. Operations at North Hub opened case 23.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0161,General inquiry about packaging options for a future shipment. Operations at Harbor Depot opened case 23.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0162,"Reefer too warm. Dispatch recorded this at North Hub, sequence 24.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0162,"Reefer too warm. Dispatch recorded this at North Hub, sequence 24.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0163,"Shipment damaged. Dispatch recorded this at Harbor Depot, sequence 24.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0164,"Delivery late. Dispatch recorded this at Central Yard, sequence 24.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0165,"Sent to wrong place. Dispatch recorded this at Airport Warehouse, sequence 24.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0166,"Invoice missing. Dispatch recorded this at West Gate, sequence 24.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0166,"Paperwork has the wrong reference. Dispatch recorded this at West Gate, sequence 24.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0167,"Held at customs. Dispatch recorded this at North Hub, sequence 24.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0168,"Please call customer. Dispatch recorded this at Harbor Depot, sequence 24.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0169,Cold chain broken. Logged at North Hub during shift 25.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0169,Cold chain broken. Logged at North Hub during shift 25.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0170,Box smashed in transit. Logged at Harbor Depot during shift 25.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0171,Truck overdue. Logged at Central Yard during shift 25.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0172,Parcel at incorrect hub. Logged at Airport Warehouse during shift 25.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0173,Docs incomplete. Logged at West Gate during shift 25.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0173,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 25.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0174,Border release refused. Logged at North Hub during shift 25.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0175,Change delivery window. Logged at Harbor Depot during shift 25.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0176,Reefer sensor shows 27 celsius above the permitted range for medicine shipment. Operations at North Hub opened case 26.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0177,Pallet arrived crushed; 27 cartons are damaged and one is leaking. Operations at Harbor Depot opened case 26.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0178,Truck is late after traffic near Central Yard; ETA moved by 27 hours. Operations at Central Yard opened case 26.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0179,Shipment was sent to the wrong depot in Airport Warehouse. Operations at Airport Warehouse opened case 26.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0180,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 26.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0180,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 26.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0181,Customs placed the cargo on hold pending inspection at the border. Operations at North Hub opened case 26.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0182,Customer asked to update the preferred delivery window. Operations at Harbor Depot opened case 26.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0183,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 27.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0183,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 27.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0184,"Package was wet and torn during unloading at Harbor Depot. Dispatch recorded this at Harbor Depot, sequence 27.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0185,"Shipment missed the connection and is stuck at the transfer depot. Dispatch recorded this at Central Yard, sequence 27.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0186,"Label contains an incorrect destination and parcel is misrouted. Dispatch recorded this at Airport Warehouse, sequence 27.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0187,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 27.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0187,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 27.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0188,"Clearance is blocked because the duty declaration is incomplete. Dispatch recorded this at North Hub, sequence 27.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0189,"Warehouse requests confirmation of reusable container ownership. Dispatch recorded this at Harbor Depot, sequence 27.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0190,Temperature logger failed and vaccine cartons may be spoiled. Logged at North Hub during shift 28.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0191,Forklift impact broke the outer crate; contents require inspection. Logged at Harbor Depot during shift 28.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0192,Carrier reported a delay; delivery is now expected tomorrow. Logged at Central Yard during shift 28.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0193,Driver reports the wrong address on the delivery instruction. Logged at Airport Warehouse during shift 28.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0194,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 28.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0194,Invoice missing. Logged at West Gate during shift 28.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0195,Border agent requested a tariff code before releasing the shipment. Logged at North Hub during shift 28.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0196,General inquiry about packaging options for a future shipment. Logged at Harbor Depot during shift 28.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0197,Reefer too warm. Operations at North Hub opened case 29.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0197,Reefer too warm. Operations at North Hub opened case 29.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0198,Shipment damaged. Operations at Harbor Depot opened case 29.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0199,Delivery late. Operations at Central Yard opened case 29.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0200,Sent to wrong place. Operations at Airport Warehouse opened case 29.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0201,Invoice missing. Operations at West Gate opened case 29.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0201,Docs incomplete. Operations at West Gate opened case 29.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0202,Held at customs. Operations at North Hub opened case 29.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0203,Please call customer. Operations at Harbor Depot opened case 29.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0204,"Cold chain broken. Dispatch recorded this at North Hub, sequence 30.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0204,"Cold chain broken. Dispatch recorded this at North Hub, sequence 30.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0205,"Box smashed in transit. Dispatch recorded this at Harbor Depot, sequence 30.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0206,"Truck overdue. Dispatch recorded this at Central Yard, sequence 30.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0207,"Parcel at incorrect hub. Dispatch recorded this at Airport Warehouse, sequence 30.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0208,"Docs incomplete. Dispatch recorded this at West Gate, sequence 30.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0208,"Manfest error blocks dispatch. Dispatch recorded this at West Gate, sequence 30.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0209,"Border release refused. Dispatch recorded this at North Hub, sequence 30.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0210,"Change delivery window. Dispatch recorded this at Harbor Depot, sequence 30.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0211,Reefer sensor shows 32 celsius above the permitted range for medicine shipment. Logged at North Hub during shift 31.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0212,Pallet arrived crushed; 32 cartons are damaged and one is leaking. Logged at Harbor Depot during shift 31.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0213,Truck is late after traffic near Central Yard; ETA moved by 32 hours. Logged at Central Yard during shift 31.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0214,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Airport Warehouse during shift 31.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0215,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 31.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0215,No signed delivery note. Logged at West Gate during shift 31.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0216,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 31.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0217,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 31.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0218,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 32.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0218,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 32.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0219,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 32.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0220,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 32.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0221,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 32.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0222,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 32.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0222,Paperwork has the wrong reference. Operations at West Gate opened case 32.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0223,Clearance is blocked because the duty declaration is incomplete. Operations at North Hub opened case 32.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0224,Warehouse requests confirmation of reusable container ownership. Operations at Harbor Depot opened case 32.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0225,"Temperature logger failed and vaccine cartons may be spoiled. Dispatch recorded this at North Hub, sequence 33.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0226,"Forklift impact broke the outer crate; contents require inspection. Dispatch recorded this at Harbor Depot, sequence 33.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0227,"Carrier reported a delay; delivery is now expected tomorrow. Dispatch recorded this at Central Yard, sequence 33.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0228,"Driver reports the wrong address on the delivery instruction. Dispatch recorded this at Airport Warehouse, sequence 33.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0229,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 33.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0229,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 33.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0230,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 33.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0231,"General inquiry about packaging options for a future shipment. Dispatch recorded this at Harbor Depot, sequence 33.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0232,Reefer too warm. Logged at North Hub during shift 34.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0232,Reefer too warm. Logged at North Hub during shift 34.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0233,Shipment damaged. Logged at Harbor Depot during shift 34.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0234,Delivery late. Logged at Central Yard during shift 34.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0235,Sent to wrong place. Logged at Airport Warehouse during shift 34.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0236,Invoice missing. Logged at West Gate during shift 34.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0236,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 34.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0237,Held at customs. Logged at North Hub during shift 34.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0238,Please call customer. Logged at Harbor Depot during shift 34.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0239,Cold chain broken. Operations at North Hub opened case 35.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0239,Cold chain broken. Operations at North Hub opened case 35.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0240,Box smashed in transit. Operations at Harbor Depot opened case 35.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0241,Truck overdue. Operations at Central Yard opened case 35.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0242,Parcel at incorrect hub. Operations at Airport Warehouse opened case 35.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0243,Docs incomplete. Operations at West Gate opened case 35.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0243,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 35.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0244,Border release refused. Operations at North Hub opened case 35.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0245,Change delivery window. Operations at Harbor Depot opened case 35.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0246,"Reefer sensor shows 37 celsius above the permitted range for medicine shipment. Dispatch recorded this at North Hub, sequence 36.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0247,"Pallet arrived crushed; 37 cartons are damaged and one is leaking. Dispatch recorded this at Harbor Depot, sequence 36.",DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0248,"Truck is late after traffic near Central Yard; ETA moved by 37 hours. Dispatch recorded this at Central Yard, sequence 36.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0249,"Shipment was sent to the wrong depot in Airport Warehouse. Dispatch recorded this at Airport Warehouse, sequence 36.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0250,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 36.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0250,"Invoice missing. Dispatch recorded this at West Gate, sequence 36.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0251,"Customs placed the cargo on hold pending inspection at the border. Dispatch recorded this at North Hub, sequence 36.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0252,"Customer asked to update the preferred delivery window. Dispatch recorded this at Harbor Depot, sequence 36.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0253,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 37.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0253,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 37.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0254,Package was wet and torn during unloading at Harbor Depot. Logged at Harbor Depot during shift 37.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0255,Shipment missed the connection and is stuck at the transfer depot. Logged at Central Yard during shift 37.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0256,Label contains an incorrect destination and parcel is misrouted. Logged at Airport Warehouse during shift 37.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0257,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 37.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0257,Docs incomplete. Logged at West Gate during shift 37.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0258,Clearance is blocked because the duty declaration is incomplete. Logged at North Hub during shift 37.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0259,Warehouse requests confirmation of reusable container ownership. Logged at Harbor Depot during shift 37.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0260,Temperature logger failed and vaccine cartons may be spoiled. Operations at North Hub opened case 38.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0261,Forklift impact broke the outer crate; contents require inspection. Operations at Harbor Depot opened case 38.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0262,Carrier reported a delay; delivery is now expected tomorrow. Operations at Central Yard opened case 38.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0263,Driver reports the wrong address on the delivery instruction. Operations at Airport Warehouse opened case 38.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0264,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 38.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0264,Manfest error blocks dispatch. Operations at West Gate opened case 38.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0265,Border agent requested a tariff code before releasing the shipment. Operations at North Hub opened case 38.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0266,General inquiry about packaging options for a future shipment. Operations at Harbor Depot opened case 38.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0267,"Reefer too warm. Dispatch recorded this at North Hub, sequence 39.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0267,"Reefer too warm. Dispatch recorded this at North Hub, sequence 39.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0268,"Shipment damaged. Dispatch recorded this at Harbor Depot, sequence 39.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0269,"Delivery late. Dispatch recorded this at Central Yard, sequence 39.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0270,"Sent to wrong place. Dispatch recorded this at Airport Warehouse, sequence 39.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0271,"Invoice missing. Dispatch recorded this at West Gate, sequence 39.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0271,"No signed delivery note. Dispatch recorded this at West Gate, sequence 39.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0272,"Held at customs. Dispatch recorded this at North Hub, sequence 39.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0273,"Please call customer. Dispatch recorded this at Harbor Depot, sequence 39.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0274,Cold chain broken. Logged at North Hub during shift 40.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0274,Cold chain broken. Logged at North Hub during shift 40.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0275,Box smashed in transit. Logged at Harbor Depot during shift 40.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0276,Truck overdue. Logged at Central Yard during shift 40.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0277,Parcel at incorrect hub. Logged at Airport Warehouse during shift 40.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0278,Docs incomplete. Logged at West Gate during shift 40.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0278,Paperwork has the wrong reference. Logged at West Gate during shift 40.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0279,Border release refused. Logged at North Hub during shift 40.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0280,Change delivery window. Logged at Harbor Depot during shift 40.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0281,Reefer sensor shows 42 celsius above the permitted range for medicine shipment. Operations at North Hub opened case 41.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
@@ -286,7 +286,7 @@ SYN-0284,Shipment was sent to the wrong depot in Airport Warehouse. Operations a
 SYN-0285,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 41.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0286,Customs placed the cargo on hold pending inspection at the border. Operations at North Hub opened case 41.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0287,Customer asked to update the preferred delivery window. Operations at Harbor Depot opened case 41.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0288,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 42.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0288,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 42.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0289,"Package was wet and torn during unloading at Harbor Depot. Dispatch recorded this at Harbor Depot, sequence 42.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0290,"Shipment missed the connection and is stuck at the transfer depot. Dispatch recorded this at Central Yard, sequence 42.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0291,"Label contains an incorrect destination and parcel is misrouted. Dispatch recorded this at Airport Warehouse, sequence 42.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
@@ -300,14 +300,14 @@ SYN-0298,Driver reports the wrong address on the delivery instruction. Logged at
 SYN-0299,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 43.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0300,Border agent requested a tariff code before releasing the shipment. Logged at North Hub during shift 43.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0301,General inquiry about packaging options for a future shipment. Logged at Harbor Depot during shift 43.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0302,Reefer too warm. Operations at North Hub opened case 44.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0302,Reefer too warm. Operations at North Hub opened case 44.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0303,Shipment damaged. Operations at Harbor Depot opened case 44.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0304,Delivery late. Operations at Central Yard opened case 44.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0305,Sent to wrong place. Operations at Airport Warehouse opened case 44.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
 SYN-0306,Invoice missing. Operations at West Gate opened case 44.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0307,Held at customs. Operations at North Hub opened case 44.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0308,Please call customer. Operations at Harbor Depot opened case 44.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0309,"Cold chain broken. Dispatch recorded this at North Hub, sequence 45.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0309,"Cold chain broken. Dispatch recorded this at North Hub, sequence 45.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0310,"Box smashed in transit. Dispatch recorded this at Harbor Depot, sequence 45.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0311,"Truck overdue. Dispatch recorded this at Central Yard, sequence 45.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0312,"Parcel at incorrect hub. Dispatch recorded this at Airport Warehouse, sequence 45.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
@@ -318,245 +318,245 @@ SYN-0316,Reefer sensor shows 47 celsius above the permitted range for medicine s
 SYN-0317,Pallet arrived crushed; 47 cartons are damaged and one is leaking. Logged at Harbor Depot during shift 46.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0318,Truck is late after traffic near Central Yard; ETA moved by 47 hours. Logged at Central Yard during shift 46.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0319,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Airport Warehouse during shift 46.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0320,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 46.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0320,Manfest error blocks dispatch. Logged at West Gate during shift 46.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0321,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 46.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0322,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 46.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0323,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 47.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0323,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 47.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0324,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 47.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0325,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 47.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0326,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 47.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0327,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 47.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0327,No signed delivery note. Operations at West Gate opened case 47.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0328,Clearance is blocked because the duty declaration is incomplete. Operations at North Hub opened case 47.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0329,Warehouse requests confirmation of reusable container ownership. Operations at Harbor Depot opened case 47.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0330,"Temperature logger failed and vaccine cartons may be spoiled. Dispatch recorded this at North Hub, sequence 48.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0331,"Forklift impact broke the outer crate; contents require inspection. Dispatch recorded this at Harbor Depot, sequence 48.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0332,"Carrier reported a delay; delivery is now expected tomorrow. Dispatch recorded this at Central Yard, sequence 48.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0333,"Driver reports the wrong address on the delivery instruction. Dispatch recorded this at Airport Warehouse, sequence 48.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0334,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 48.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0334,"Paperwork has the wrong reference. Dispatch recorded this at West Gate, sequence 48.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0335,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 48.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0336,"General inquiry about packaging options for a future shipment. Dispatch recorded this at Harbor Depot, sequence 48.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0337,Reefer too warm. Logged at North Hub during shift 49.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0337,Reefer too warm. Logged at North Hub during shift 49.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0338,Shipment damaged. Logged at Harbor Depot during shift 49.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0339,Delivery late. Logged at Central Yard during shift 49.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0340,Sent to wrong place. Logged at Airport Warehouse during shift 49.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0341,Invoice missing. Logged at West Gate during shift 49.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0341,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 49.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0342,Held at customs. Logged at North Hub during shift 49.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0343,Please call customer. Logged at Harbor Depot during shift 49.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0344,Cold chain broken. Operations at North Hub opened case 50.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0344,Cold chain broken. Operations at North Hub opened case 50.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0345,Box smashed in transit. Operations at Harbor Depot opened case 50.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0346,Truck overdue. Operations at Central Yard opened case 50.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0347,Parcel at incorrect hub. Operations at Airport Warehouse opened case 50.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0348,Docs incomplete. Operations at West Gate opened case 50.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0348,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 50.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0349,Border release refused. Operations at North Hub opened case 50.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0350,Change delivery window. Operations at Harbor Depot opened case 50.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0351,"Reefer sensor shows 52 celsius above the permitted range for medicine shipment. Dispatch recorded this at North Hub, sequence 51.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0352,"Pallet arrived crushed; 52 cartons are damaged and one is leaking. Dispatch recorded this at Harbor Depot, sequence 51.",DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0353,"Truck is late after traffic near Central Yard; ETA moved by 52 hours. Dispatch recorded this at Central Yard, sequence 51.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0354,"Shipment was sent to the wrong depot in Airport Warehouse. Dispatch recorded this at Airport Warehouse, sequence 51.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0355,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 51.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0355,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 51.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0356,"Customs placed the cargo on hold pending inspection at the border. Dispatch recorded this at North Hub, sequence 51.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0357,"Customer asked to update the preferred delivery window. Dispatch recorded this at Harbor Depot, sequence 51.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0358,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 52.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0358,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 52.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0359,Package was wet and torn during unloading at Harbor Depot. Logged at Harbor Depot during shift 52.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0360,Shipment missed the connection and is stuck at the transfer depot. Logged at Central Yard during shift 52.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0361,Label contains an incorrect destination and parcel is misrouted. Logged at Airport Warehouse during shift 52.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0362,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 52.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0362,Invoice missing. Logged at West Gate during shift 52.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0363,Clearance is blocked because the duty declaration is incomplete. Logged at North Hub during shift 52.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0364,Warehouse requests confirmation of reusable container ownership. Logged at Harbor Depot during shift 52.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0365,Temperature logger failed and vaccine cartons may be spoiled. Operations at North Hub opened case 53.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0366,Forklift impact broke the outer crate; contents require inspection. Operations at Harbor Depot opened case 53.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0367,Carrier reported a delay; delivery is now expected tomorrow. Operations at Central Yard opened case 53.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0368,Driver reports the wrong address on the delivery instruction. Operations at Airport Warehouse opened case 53.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0369,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 53.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0369,Docs incomplete. Operations at West Gate opened case 53.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0370,Border agent requested a tariff code before releasing the shipment. Operations at North Hub opened case 53.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0371,General inquiry about packaging options for a future shipment. Operations at Harbor Depot opened case 53.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0372,"Reefer too warm. Dispatch recorded this at North Hub, sequence 54.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0372,"Reefer too warm. Dispatch recorded this at North Hub, sequence 54.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0373,"Shipment damaged. Dispatch recorded this at Harbor Depot, sequence 54.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0374,"Delivery late. Dispatch recorded this at Central Yard, sequence 54.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0375,"Sent to wrong place. Dispatch recorded this at Airport Warehouse, sequence 54.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0376,"Invoice missing. Dispatch recorded this at West Gate, sequence 54.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0376,"Manfest error blocks dispatch. Dispatch recorded this at West Gate, sequence 54.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0377,"Held at customs. Dispatch recorded this at North Hub, sequence 54.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0378,"Please call customer. Dispatch recorded this at Harbor Depot, sequence 54.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0379,Cold chain broken. Logged at North Hub during shift 55.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0379,Cold chain broken. Logged at North Hub during shift 55.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0380,Box smashed in transit. Logged at Harbor Depot during shift 55.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0381,Truck overdue. Logged at Central Yard during shift 55.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0382,Parcel at incorrect hub. Logged at Airport Warehouse during shift 55.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0383,Docs incomplete. Logged at West Gate during shift 55.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0383,No signed delivery note. Logged at West Gate during shift 55.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0384,Border release refused. Logged at North Hub during shift 55.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0385,Change delivery window. Logged at Harbor Depot during shift 55.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0386,Reefer sensor shows 57 celsius above the permitted range for medicine shipment. Operations at North Hub opened case 56.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0387,Pallet arrived crushed; 57 cartons are damaged and one is leaking. Operations at Harbor Depot opened case 56.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0388,Truck is late after traffic near Central Yard; ETA moved by 57 hours. Operations at Central Yard opened case 56.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0389,Shipment was sent to the wrong depot in Airport Warehouse. Operations at Airport Warehouse opened case 56.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0390,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 56.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0390,Paperwork has the wrong reference. Operations at West Gate opened case 56.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0391,Customs placed the cargo on hold pending inspection at the border. Operations at North Hub opened case 56.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0392,Customer asked to update the preferred delivery window. Operations at Harbor Depot opened case 56.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0393,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 57.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0393,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 57.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0394,"Package was wet and torn during unloading at Harbor Depot. Dispatch recorded this at Harbor Depot, sequence 57.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0395,"Shipment missed the connection and is stuck at the transfer depot. Dispatch recorded this at Central Yard, sequence 57.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0396,"Label contains an incorrect destination and parcel is misrouted. Dispatch recorded this at Airport Warehouse, sequence 57.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0397,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 57.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0397,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 57.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0398,"Clearance is blocked because the duty declaration is incomplete. Dispatch recorded this at North Hub, sequence 57.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0399,"Warehouse requests confirmation of reusable container ownership. Dispatch recorded this at Harbor Depot, sequence 57.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0400,Temperature logger failed and vaccine cartons may be spoiled. Logged at North Hub during shift 58.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0401,Forklift impact broke the outer crate; contents require inspection. Logged at Harbor Depot during shift 58.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0402,Carrier reported a delay; delivery is now expected tomorrow. Logged at Central Yard during shift 58.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0403,Driver reports the wrong address on the delivery instruction. Logged at Airport Warehouse during shift 58.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0404,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 58.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0404,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 58.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0405,Border agent requested a tariff code before releasing the shipment. Logged at North Hub during shift 58.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0406,General inquiry about packaging options for a future shipment. Logged at Harbor Depot during shift 58.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0407,Reefer too warm. Operations at North Hub opened case 59.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0407,Reefer too warm. Operations at North Hub opened case 59.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0408,Shipment damaged. Operations at Harbor Depot opened case 59.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0409,Delivery late. Operations at Central Yard opened case 59.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0410,Sent to wrong place. Operations at Airport Warehouse opened case 59.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0411,Invoice missing. Operations at West Gate opened case 59.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0411,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 59.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0412,Held at customs. Operations at North Hub opened case 59.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0413,Please call customer. Operations at Harbor Depot opened case 59.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0414,"Cold chain broken. Dispatch recorded this at North Hub, sequence 60.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0414,"Cold chain broken. Dispatch recorded this at North Hub, sequence 60.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0415,"Box smashed in transit. Dispatch recorded this at Harbor Depot, sequence 60.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0416,"Truck overdue. Dispatch recorded this at Central Yard, sequence 60.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0417,"Parcel at incorrect hub. Dispatch recorded this at Airport Warehouse, sequence 60.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0418,"Docs incomplete. Dispatch recorded this at West Gate, sequence 60.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0418,"Invoice missing. Dispatch recorded this at West Gate, sequence 60.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0419,"Border release refused. Dispatch recorded this at North Hub, sequence 60.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0420,"Change delivery window. Dispatch recorded this at Harbor Depot, sequence 60.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0421,Reefer sensor shows 62 celsius above the permitted range for medicine shipment. Logged at North Hub during shift 61.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0422,Pallet arrived crushed; 62 cartons are damaged and one is leaking. Logged at Harbor Depot during shift 61.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0423,Truck is late after traffic near Central Yard; ETA moved by 62 hours. Logged at Central Yard during shift 61.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0424,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Airport Warehouse during shift 61.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0425,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 61.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0425,Docs incomplete. Logged at West Gate during shift 61.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0426,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 61.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0427,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 61.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0428,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 62.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0428,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 62.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0429,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 62.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0430,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 62.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0431,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 62.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0432,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 62.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0432,Manfest error blocks dispatch. Operations at West Gate opened case 62.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0433,Clearance is blocked because the duty declaration is incomplete. Operations at North Hub opened case 62.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0434,Warehouse requests confirmation of reusable container ownership. Operations at Harbor Depot opened case 62.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0435,"Temperature logger failed and vaccine cartons may be spoiled. Dispatch recorded this at North Hub, sequence 63.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0436,"Forklift impact broke the outer crate; contents require inspection. Dispatch recorded this at Harbor Depot, sequence 63.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0437,"Carrier reported a delay; delivery is now expected tomorrow. Dispatch recorded this at Central Yard, sequence 63.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0438,"Driver reports the wrong address on the delivery instruction. Dispatch recorded this at Airport Warehouse, sequence 63.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0439,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 63.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0439,"No signed delivery note. Dispatch recorded this at West Gate, sequence 63.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0440,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 63.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0441,"General inquiry about packaging options for a future shipment. Dispatch recorded this at Harbor Depot, sequence 63.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0442,Reefer too warm. Logged at North Hub during shift 64.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0442,Reefer too warm. Logged at North Hub during shift 64.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0443,Shipment damaged. Logged at Harbor Depot during shift 64.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0444,Delivery late. Logged at Central Yard during shift 64.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0445,Sent to wrong place. Logged at Airport Warehouse during shift 64.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0446,Invoice missing. Logged at West Gate during shift 64.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0446,Paperwork has the wrong reference. Logged at West Gate during shift 64.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0447,Held at customs. Logged at North Hub during shift 64.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0448,Please call customer. Logged at Harbor Depot during shift 64.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0449,Cold chain broken. Operations at North Hub opened case 65.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0449,Cold chain broken. Operations at North Hub opened case 65.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0450,Box smashed in transit. Operations at Harbor Depot opened case 65.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0451,Truck overdue. Operations at Central Yard opened case 65.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0452,Parcel at incorrect hub. Operations at Airport Warehouse opened case 65.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0453,Docs incomplete. Operations at West Gate opened case 65.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0453,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 65.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0454,Border release refused. Operations at North Hub opened case 65.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0455,Change delivery window. Operations at Harbor Depot opened case 65.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0456,"Reefer sensor shows 67 celsius above the permitted range for medicine shipment. Dispatch recorded this at North Hub, sequence 66.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0457,"Pallet arrived crushed; 67 cartons are damaged and one is leaking. Dispatch recorded this at Harbor Depot, sequence 66.",DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0458,"Truck is late after traffic near Central Yard; ETA moved by 67 hours. Dispatch recorded this at Central Yard, sequence 66.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0459,"Shipment was sent to the wrong depot in Airport Warehouse. Dispatch recorded this at Airport Warehouse, sequence 66.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0460,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 66.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0460,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 66.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0461,"Customs placed the cargo on hold pending inspection at the border. Dispatch recorded this at North Hub, sequence 66.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0462,"Customer asked to update the preferred delivery window. Dispatch recorded this at Harbor Depot, sequence 66.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0463,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 67.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0463,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 67.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0464,Package was wet and torn during unloading at Harbor Depot. Logged at Harbor Depot during shift 67.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0465,Shipment missed the connection and is stuck at the transfer depot. Logged at Central Yard during shift 67.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0466,Label contains an incorrect destination and parcel is misrouted. Logged at Airport Warehouse during shift 67.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0467,Manifest number does not match the paperwork for the shipment. Logged at West Gate during shift 67.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0467,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 67.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0468,Clearance is blocked because the duty declaration is incomplete. Logged at North Hub during shift 67.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0469,Warehouse requests confirmation of reusable container ownership. Logged at Harbor Depot during shift 67.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0470,Temperature logger failed and vaccine cartons may be spoiled. Operations at North Hub opened case 68.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0471,Forklift impact broke the outer crate; contents require inspection. Operations at Harbor Depot opened case 68.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0472,Carrier reported a delay; delivery is now expected tomorrow. Operations at Central Yard opened case 68.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0473,Driver reports the wrong address on the delivery instruction. Operations at Airport Warehouse opened case 68.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0474,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 68.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0474,Invoice missing. Operations at West Gate opened case 68.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0475,Border agent requested a tariff code before releasing the shipment. Operations at North Hub opened case 68.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0476,General inquiry about packaging options for a future shipment. Operations at Harbor Depot opened case 68.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0477,"Reefer too warm. Dispatch recorded this at North Hub, sequence 69.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0477,"Reefer too warm. Dispatch recorded this at North Hub, sequence 69.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0478,"Shipment damaged. Dispatch recorded this at Harbor Depot, sequence 69.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0479,"Delivery late. Dispatch recorded this at Central Yard, sequence 69.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0480,"Sent to wrong place. Dispatch recorded this at Airport Warehouse, sequence 69.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0481,"Invoice missing. Dispatch recorded this at West Gate, sequence 69.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0481,"Docs incomplete. Dispatch recorded this at West Gate, sequence 69.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0482,"Held at customs. Dispatch recorded this at North Hub, sequence 69.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0483,"Please call customer. Dispatch recorded this at Harbor Depot, sequence 69.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0484,Cold chain broken. Logged at North Hub during shift 70.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0484,Cold chain broken. Logged at North Hub during shift 70.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0485,Box smashed in transit. Logged at Harbor Depot during shift 70.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0486,Truck overdue. Logged at Central Yard during shift 70.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0487,Parcel at incorrect hub. Logged at Airport Warehouse during shift 70.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0488,Docs incomplete. Logged at West Gate during shift 70.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0488,Manfest error blocks dispatch. Logged at West Gate during shift 70.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0489,Border release refused. Logged at North Hub during shift 70.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0490,Change delivery window. Logged at Harbor Depot during shift 70.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0491,Reefer sensor shows 72 celsius above the permitted range for medicine shipment. Operations at North Hub opened case 71.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0492,Pallet arrived crushed; 72 cartons are damaged and one is leaking. Operations at Harbor Depot opened case 71.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0493,Truck is late after traffic near Central Yard; ETA moved by 72 hours. Operations at Central Yard opened case 71.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0494,Shipment was sent to the wrong depot in Airport Warehouse. Operations at Airport Warehouse opened case 71.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0495,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 71.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0495,No signed delivery note. Operations at West Gate opened case 71.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0496,Customs placed the cargo on hold pending inspection at the border. Operations at North Hub opened case 71.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0497,Customer asked to update the preferred delivery window. Operations at Harbor Depot opened case 71.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0498,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 72.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0498,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 72.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0499,"Package was wet and torn during unloading at Harbor Depot. Dispatch recorded this at Harbor Depot, sequence 72.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0500,"Shipment missed the connection and is stuck at the transfer depot. Dispatch recorded this at Central Yard, sequence 72.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0501,"Label contains an incorrect destination and parcel is misrouted. Dispatch recorded this at Airport Warehouse, sequence 72.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0502,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 72.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0502,"Paperwork has the wrong reference. Dispatch recorded this at West Gate, sequence 72.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0503,"Clearance is blocked because the duty declaration is incomplete. Dispatch recorded this at North Hub, sequence 72.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0504,"Warehouse requests confirmation of reusable container ownership. Dispatch recorded this at Harbor Depot, sequence 72.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0505,Temperature logger failed and vaccine cartons may be spoiled. Logged at North Hub during shift 73.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0506,Forklift impact broke the outer crate; contents require inspection. Logged at Harbor Depot during shift 73.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0507,Carrier reported a delay; delivery is now expected tomorrow. Logged at Central Yard during shift 73.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0508,Driver reports the wrong address on the delivery instruction. Logged at Airport Warehouse during shift 73.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0509,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 73.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0509,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 73.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0510,Border agent requested a tariff code before releasing the shipment. Logged at North Hub during shift 73.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0511,General inquiry about packaging options for a future shipment. Logged at Harbor Depot during shift 73.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0512,Reefer too warm. Operations at North Hub opened case 74.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0512,Reefer too warm. Operations at North Hub opened case 74.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0513,Shipment damaged. Operations at Harbor Depot opened case 74.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0514,Delivery late. Operations at Central Yard opened case 74.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0515,Sent to wrong place. Operations at Airport Warehouse opened case 74.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0516,Invoice missing. Operations at West Gate opened case 74.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0516,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 74.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0517,Held at customs. Operations at North Hub opened case 74.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0518,Please call customer. Operations at Harbor Depot opened case 74.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0519,"Cold chain broken. Dispatch recorded this at North Hub, sequence 75.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0519,"Cold chain broken. Dispatch recorded this at North Hub, sequence 75.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0520,"Box smashed in transit. Dispatch recorded this at Harbor Depot, sequence 75.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0521,"Truck overdue. Dispatch recorded this at Central Yard, sequence 75.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0522,"Parcel at incorrect hub. Dispatch recorded this at Airport Warehouse, sequence 75.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0523,"Docs incomplete. Dispatch recorded this at West Gate, sequence 75.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0523,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 75.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0524,"Border release refused. Dispatch recorded this at North Hub, sequence 75.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0525,"Change delivery window. Dispatch recorded this at Harbor Depot, sequence 75.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0526,Reefer sensor shows 77 celsius above the permitted range for medicine shipment. Logged at North Hub during shift 76.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0527,Pallet arrived crushed; 77 cartons are damaged and one is leaking. Logged at Harbor Depot during shift 76.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0528,Truck is late after traffic near Central Yard; ETA moved by 77 hours. Logged at Central Yard during shift 76.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0529,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Airport Warehouse during shift 76.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0530,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 76.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0530,Invoice missing. Logged at West Gate during shift 76.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0531,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 76.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0532,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 76.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0533,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 77.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0533,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 77.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0534,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 77.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0535,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 77.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0536,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 77.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0537,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 77.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0537,Docs incomplete. Operations at West Gate opened case 77.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0538,Clearance is blocked because the duty declaration is incomplete. Operations at North Hub opened case 77.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0539,Warehouse requests confirmation of reusable container ownership. Operations at Harbor Depot opened case 77.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0540,"Temperature logger failed and vaccine cartons may be spoiled. Dispatch recorded this at North Hub, sequence 78.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0541,"Forklift impact broke the outer crate; contents require inspection. Dispatch recorded this at Harbor Depot, sequence 78.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0542,"Carrier reported a delay; delivery is now expected tomorrow. Dispatch recorded this at Central Yard, sequence 78.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0543,"Driver reports the wrong address on the delivery instruction. Dispatch recorded this at Airport Warehouse, sequence 78.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0544,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 78.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0544,"Manfest error blocks dispatch. Dispatch recorded this at West Gate, sequence 78.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0545,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 78.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0546,"General inquiry about packaging options for a future shipment. Dispatch recorded this at Harbor Depot, sequence 78.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0547,Reefer too warm. Logged at North Hub during shift 79.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0547,Reefer too warm. Logged at North Hub during shift 79.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0548,Shipment damaged. Logged at Harbor Depot during shift 79.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0549,Delivery late. Logged at Central Yard during shift 79.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0550,Sent to wrong place. Logged at Airport Warehouse during shift 79.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0551,Invoice missing. Logged at West Gate during shift 79.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0551,No signed delivery note. Logged at West Gate during shift 79.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0552,Held at customs. Logged at North Hub during shift 79.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0553,Please call customer. Logged at Harbor Depot during shift 79.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0554,Cold chain broken. Operations at North Hub opened case 80.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0554,Cold chain broken. Operations at North Hub opened case 80.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0555,Box smashed in transit. Operations at Harbor Depot opened case 80.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0556,Truck overdue. Operations at Central Yard opened case 80.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0557,Parcel at incorrect hub. Operations at Airport Warehouse opened case 80.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0558,Docs incomplete. Operations at West Gate opened case 80.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0558,Paperwork has the wrong reference. Operations at West Gate opened case 80.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0559,Border release refused. Operations at North Hub opened case 80.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0560,Change delivery window. Operations at Harbor Depot opened case 80.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0561,"Reefer sensor shows 82 celsius above the permitted range for medicine shipment. Dispatch recorded this at North Hub, sequence 81.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
@@ -566,7 +566,7 @@ SYN-0564,"Shipment was sent to the wrong depot in Airport Warehouse. Dispatch re
 SYN-0565,"Commercial invoice is missing from the document pouch. Dispatch recorded this at West Gate, sequence 81.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0566,"Customs placed the cargo on hold pending inspection at the border. Dispatch recorded this at North Hub, sequence 81.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0567,"Customer asked to update the preferred delivery window. Dispatch recorded this at Harbor Depot, sequence 81.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0568,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 82.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0568,Cold-chain alert: cargo became warm during transfer at North Hub. Logged at North Hub during shift 82.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0569,Package was wet and torn during unloading at Harbor Depot. Logged at Harbor Depot during shift 82.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0570,Shipment missed the connection and is stuck at the transfer depot. Logged at Central Yard during shift 82.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0571,Label contains an incorrect destination and parcel is misrouted. Logged at Airport Warehouse during shift 82.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
@@ -580,14 +580,14 @@ SYN-0578,Driver reports the wrong address on the delivery instruction. Operation
 SYN-0579,Delivery requires a signature but the proof-of-delivery form is blank. Operations at West Gate opened case 83.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0580,Border agent requested a tariff code before releasing the shipment. Operations at North Hub opened case 83.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0581,General inquiry about packaging options for a future shipment. Operations at Harbor Depot opened case 83.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0582,"Reefer too warm. Dispatch recorded this at North Hub, sequence 84.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0582,"Reefer too warm. Dispatch recorded this at North Hub, sequence 84.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0583,"Shipment damaged. Dispatch recorded this at Harbor Depot, sequence 84.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0584,"Delivery late. Dispatch recorded this at Central Yard, sequence 84.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0585,"Sent to wrong place. Dispatch recorded this at Airport Warehouse, sequence 84.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
 SYN-0586,"Invoice missing. Dispatch recorded this at West Gate, sequence 84.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0587,"Held at customs. Dispatch recorded this at North Hub, sequence 84.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0588,"Please call customer. Dispatch recorded this at Harbor Depot, sequence 84.",OTHER,false,synthetic_train_template_family_v3,train
-SYN-0589,Cold chain broken. Logged at North Hub during shift 85.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0589,Cold chain broken. Logged at North Hub during shift 85.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0590,Box smashed in transit. Logged at Harbor Depot during shift 85.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0591,Truck overdue. Logged at Central Yard during shift 85.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0592,Parcel at incorrect hub. Logged at Airport Warehouse during shift 85.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
@@ -598,244 +598,244 @@ SYN-0596,Reefer sensor shows 87 celsius above the permitted range for medicine s
 SYN-0597,Pallet arrived crushed; 87 cartons are damaged and one is leaking. Operations at Harbor Depot opened case 86.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0598,Truck is late after traffic near Central Yard; ETA moved by 87 hours. Operations at Central Yard opened case 86.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0599,Shipment was sent to the wrong depot in Airport Warehouse. Operations at Airport Warehouse opened case 86.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0600,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 86.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0600,Manfest error blocks dispatch. Operations at West Gate opened case 86.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0601,Customs placed the cargo on hold pending inspection at the border. Operations at North Hub opened case 86.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0602,Customer asked to update the preferred delivery window. Operations at Harbor Depot opened case 86.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0603,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 87.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0603,"Cold-chain alert: cargo became warm during transfer at North Hub. Dispatch recorded this at North Hub, sequence 87.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0604,"Package was wet and torn during unloading at Harbor Depot. Dispatch recorded this at Harbor Depot, sequence 87.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0605,"Shipment missed the connection and is stuck at the transfer depot. Dispatch recorded this at Central Yard, sequence 87.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0606,"Label contains an incorrect destination and parcel is misrouted. Dispatch recorded this at Airport Warehouse, sequence 87.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0607,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 87.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0607,"No signed delivery note. Dispatch recorded this at West Gate, sequence 87.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0608,"Clearance is blocked because the duty declaration is incomplete. Dispatch recorded this at North Hub, sequence 87.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0609,"Warehouse requests confirmation of reusable container ownership. Dispatch recorded this at Harbor Depot, sequence 87.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0610,Temperature logger failed and vaccine cartons may be spoiled. Logged at North Hub during shift 88.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0611,Forklift impact broke the outer crate; contents require inspection. Logged at Harbor Depot during shift 88.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0612,Carrier reported a delay; delivery is now expected tomorrow. Logged at Central Yard during shift 88.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0613,Driver reports the wrong address on the delivery instruction. Logged at Airport Warehouse during shift 88.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0614,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 88.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0614,Paperwork has the wrong reference. Logged at West Gate during shift 88.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0615,Border agent requested a tariff code before releasing the shipment. Logged at North Hub during shift 88.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0616,General inquiry about packaging options for a future shipment. Logged at Harbor Depot during shift 88.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0617,Reefer too warm. Operations at North Hub opened case 89.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0617,Reefer too warm. Operations at North Hub opened case 89.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0618,Shipment damaged. Operations at Harbor Depot opened case 89.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0619,Delivery late. Operations at Central Yard opened case 89.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0620,Sent to wrong place. Operations at Airport Warehouse opened case 89.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0621,Invoice missing. Operations at West Gate opened case 89.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0621,Commercial invoice is missing from the document pouch. Operations at West Gate opened case 89.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0622,Held at customs. Operations at North Hub opened case 89.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0623,Please call customer. Operations at Harbor Depot opened case 89.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0624,"Cold chain broken. Dispatch recorded this at North Hub, sequence 90.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0624,"Cold chain broken. Dispatch recorded this at North Hub, sequence 90.",TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0625,"Box smashed in transit. Dispatch recorded this at Harbor Depot, sequence 90.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0626,"Truck overdue. Dispatch recorded this at Central Yard, sequence 90.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0627,"Parcel at incorrect hub. Dispatch recorded this at Airport Warehouse, sequence 90.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0628,"Docs incomplete. Dispatch recorded this at West Gate, sequence 90.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0628,"Manifest number does not match the paperwork for the shipment. Dispatch recorded this at West Gate, sequence 90.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0629,"Border release refused. Dispatch recorded this at North Hub, sequence 90.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0630,"Change delivery window. Dispatch recorded this at Harbor Depot, sequence 90.",OTHER,false,synthetic_train_template_family_v3,train
 SYN-0631,Reefer sensor shows 92 celsius above the permitted range for medicine shipment. Logged at North Hub during shift 91.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0632,Pallet arrived crushed; 92 cartons are damaged and one is leaking. Logged at Harbor Depot during shift 91.,DAMAGE,true,synthetic_train_template_family_v3,train
 SYN-0633,Truck is late after traffic near Central Yard; ETA moved by 92 hours. Logged at Central Yard during shift 91.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0634,Shipment was sent to the wrong depot in Airport Warehouse. Logged at Airport Warehouse during shift 91.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0635,Commercial invoice is missing from the document pouch. Logged at West Gate during shift 91.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0635,Delivery requires a signature but the proof-of-delivery form is blank. Logged at West Gate during shift 91.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0636,Customs placed the cargo on hold pending inspection at the border. Logged at North Hub during shift 91.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0637,Customer asked to update the preferred delivery window. Logged at Harbor Depot during shift 91.,OTHER,false,synthetic_train_template_family_v3,train
-SYN-0638,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 92.,TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
+SYN-0638,Cold-chain alert: cargo became warm during transfer at North Hub. Operations at North Hub opened case 92.,TEMPERATURE_EXCURSION,false,synthetic_train_template_family_v3,train
 SYN-0639,Package was wet and torn during unloading at Harbor Depot. Operations at Harbor Depot opened case 92.,DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0640,Shipment missed the connection and is stuck at the transfer depot. Operations at Central Yard opened case 92.,DELAY,false,synthetic_train_template_family_v3,train
 SYN-0641,Label contains an incorrect destination and parcel is misrouted. Operations at Airport Warehouse opened case 92.,WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0642,Manifest number does not match the paperwork for the shipment. Operations at West Gate opened case 92.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0642,Invoice missing. Operations at West Gate opened case 92.,DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0643,Clearance is blocked because the duty declaration is incomplete. Operations at North Hub opened case 92.,CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0644,Warehouse requests confirmation of reusable container ownership. Operations at Harbor Depot opened case 92.,OTHER,false,synthetic_train_template_family_v3,train
 SYN-0645,"Temperature logger failed and vaccine cartons may be spoiled. Dispatch recorded this at North Hub, sequence 93.",TEMPERATURE_EXCURSION,true,synthetic_train_template_family_v3,train
 SYN-0646,"Forklift impact broke the outer crate; contents require inspection. Dispatch recorded this at Harbor Depot, sequence 93.",DAMAGE,false,synthetic_train_template_family_v3,train
 SYN-0647,"Carrier reported a delay; delivery is now expected tomorrow. Dispatch recorded this at Central Yard, sequence 93.",DELAY,false,synthetic_train_template_family_v3,train
 SYN-0648,"Driver reports the wrong address on the delivery instruction. Dispatch recorded this at Airport Warehouse, sequence 93.",WRONG_DESTINATION,false,synthetic_train_template_family_v3,train
-SYN-0649,"Delivery requires a signature but the proof-of-delivery form is blank. Dispatch recorded this at West Gate, sequence 93.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
+SYN-0649,"Docs incomplete. Dispatch recorded this at West Gate, sequence 93.",DOCUMENTATION,false,synthetic_train_template_family_v3,train
 SYN-0650,"Border agent requested a tariff code before releasing the shipment. Dispatch recorded this at North Hub, sequence 93.",CUSTOMS_HOLD,false,synthetic_train_template_family_v3,train
 SYN-0651,Container return query. Record 93 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0652,Tempature alarm on chilled cargo. Entry 94 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0653,Damagd parcel received. Entry 94 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0654,Shipmnt delyed by 95 hours. Entry 94 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0655,Misrouted shipmnt. Entry 94 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0656,Manfest error blocks dispatch. Entry 94 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0657,Customs clerance pending. Entry 94 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0658,Packaging question. Entry 94 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0659,Frozen goods are thawing at North Hub. Record 95 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0660,Goods arrived dented at Harbor Depot. Record 95 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0661,Consignment has not arrived. Record 95 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0662,Delivered to another warehouse. Record 95 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0663,No signed delivery note. Record 95 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0664,Cargo detained for duty review. Record 95 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0665,Update contact preference. Record 95 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0666,Cooling unit failed overnight. Entry 96 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0667,Carton ripped open. Entry 96 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0668,ETA slipped again at Central Yard. Entry 96 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0669,Destination label is wrong. Entry 96 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0670,Paperwork has the wrong reference. Entry 96 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0671,Import entry rejected. Entry 96 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0672,Container return query. Entry 96 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0673,Tempature alarm on chilled cargo. Record 97 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0674,Damagd parcel received. Record 97 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0675,Shipmnt delyed by 98 hours. Record 97 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0676,Misrouted shipmnt. Record 97 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0677,Manfest error blocks dispatch. Record 97 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0678,Customs clerance pending. Record 97 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0679,Packaging question. Record 97 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0680,Frozen goods are thawing at North Hub. Entry 98 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0681,Goods arrived dented at Harbor Depot. Entry 98 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0682,Consignment has not arrived. Entry 98 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0683,Delivered to another warehouse. Entry 98 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0684,No signed delivery note. Entry 98 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0685,Cargo detained for duty review. Entry 98 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0686,Update contact preference. Entry 98 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0687,Cooling unit failed overnight. Record 99 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0688,Carton ripped open. Record 99 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0689,ETA slipped again at Central Yard. Record 99 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0690,Destination label is wrong. Record 99 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0691,Paperwork has the wrong reference. Record 99 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0692,Import entry rejected. Record 99 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0693,Container return query. Record 99 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0694,Tempature alarm on chilled cargo. Entry 100 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0695,Damagd parcel received. Entry 100 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0696,Shipmnt delyed by 4 hours. Entry 100 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0697,Misrouted shipmnt. Entry 100 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0698,Manfest error blocks dispatch. Entry 100 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0699,Customs clerance pending. Entry 100 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0700,Packaging question. Entry 100 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0701,Frozen goods are thawing at North Hub. Record 101 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0702,Goods arrived dented at Harbor Depot. Record 101 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0703,Consignment has not arrived. Record 101 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0704,Delivered to another warehouse. Record 101 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0705,No signed delivery note. Record 101 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0706,Cargo detained for duty review. Record 101 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0707,Update contact preference. Record 101 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0708,Cooling unit failed overnight. Entry 102 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0709,Carton ripped open. Entry 102 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0710,ETA slipped again at Central Yard. Entry 102 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0711,Destination label is wrong. Entry 102 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0712,Paperwork has the wrong reference. Entry 102 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0713,Import entry rejected. Entry 102 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0714,Container return query. Entry 102 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0715,Tempature alarm on chilled cargo. Record 103 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0716,Damagd parcel received. Record 103 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0717,Shipmnt delyed by 7 hours. Record 103 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0718,Misrouted shipmnt. Record 103 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0719,Manfest error blocks dispatch. Record 103 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0720,Customs clerance pending. Record 103 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0721,Packaging question. Record 103 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0722,Frozen goods are thawing at North Hub. Entry 104 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0723,Goods arrived dented at Harbor Depot. Entry 104 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0724,Consignment has not arrived. Entry 104 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0725,Delivered to another warehouse. Entry 104 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0726,No signed delivery note. Entry 104 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0727,Cargo detained for duty review. Entry 104 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0728,Update contact preference. Entry 104 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0729,Cooling unit failed overnight. Record 105 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0730,Carton ripped open. Record 105 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0731,ETA slipped again at Central Yard. Record 105 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0732,Destination label is wrong. Record 105 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0733,Paperwork has the wrong reference. Record 105 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0734,Import entry rejected. Record 105 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0735,Container return query. Record 105 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0736,Tempature alarm on chilled cargo. Entry 106 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0652,Refrigeration stopped and the cold chain is outside its limit. Entry 94 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0653,Seal was tampered with and the case is punctured. Entry 94 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0654,Vehicle is behind schedule after a missed connection. Entry 94 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0655,Cargo reached the incorrect hub. Entry 94 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0656,Receipt was omitted from the file. Entry 94 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0657,Customs hold remains active. Entry 94 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0658,All parties were informed of the routine update. Entry 94 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0659,Temperature logger recorded an excursion. Record 95 was filed from North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0660,Outer packaging is smashed. Record 95 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0661,Delivery is overdue. Record 95 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0662,Route sent the parcel elsewhere. Record 95 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0663,Import declaration is incomplete. Record 95 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0664,Clearance is blocked at the border. Record 95 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0665,Consignee acknowledged the message. Record 95 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0666,Tempature alarm on chilled cargo. Entry 96 was logged at North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0667,Damagd parcel received. Entry 96 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0668,Shipmnt delyed by 97 hours. Entry 96 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0669,Misrouted shipmnt. Entry 96 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0670,Health certificate cannot be located. Entry 96 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0671,Customs clerance pending. Entry 96 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0672,Packaging question. Entry 96 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0673,Frozen goods are thawing at North Hub. Record 97 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0674,Goods arrived dented at Harbor Depot. Record 97 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0675,Consignment has not arrived. Record 97 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0676,Delivered to another warehouse. Record 97 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0677,Packing list was omitted from the pouch. Record 97 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0678,Cargo detained for duty review. Record 97 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0679,Update contact preference. Record 97 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0680,Cooling unit failed overnight. Entry 98 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0681,Carton ripped open. Entry 98 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0682,ETA slipped again at Central Yard. Entry 98 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0683,Destination label is wrong. Entry 98 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0684,Bill of lading number is incorrect. Entry 98 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0685,Import entry rejected. Entry 98 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0686,Container return query. Entry 98 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0687,Refrigeration stopped and the cold chain is outside its limit. Record 99 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0688,Seal was tampered with and the case is punctured. Record 99 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0689,Vehicle is behind schedule after a missed connection. Record 99 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0690,Cargo reached the incorrect hub. Record 99 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0691,Air waybill is absent. Record 99 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0692,Customs hold remains active. Record 99 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0693,All parties were informed of the routine update. Record 99 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0694,Temperature logger recorded an excursion. Entry 100 was logged at North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0695,Outer packaging is smashed. Entry 100 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0696,Delivery is overdue. Entry 100 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0697,Route sent the parcel elsewhere. Entry 100 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0698,Certificate of origin has expired. Entry 100 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0699,Clearance is blocked at the border. Entry 100 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0700,Consignee acknowledged the message. Entry 100 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0701,Tempature alarm on chilled cargo. Record 101 was filed from North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0702,Damagd parcel received. Record 101 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0703,Shipmnt delyed by 5 hours. Record 101 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0704,Misrouted shipmnt. Record 101 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0705,Proof of delivery is unsigned. Record 101 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0706,Customs clerance pending. Record 101 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0707,Packaging question. Record 101 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0708,Frozen goods are thawing at North Hub. Entry 102 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0709,Goods arrived dented at Harbor Depot. Entry 102 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0710,Consignment has not arrived. Entry 102 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0711,Delivered to another warehouse. Entry 102 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0712,Receipt was omitted from the file. Entry 102 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0713,Cargo detained for duty review. Entry 102 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0714,Update contact preference. Entry 102 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0715,Cooling unit failed overnight. Record 103 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0716,Carton ripped open. Record 103 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0717,ETA slipped again at Central Yard. Record 103 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0718,Destination label is wrong. Record 103 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0719,Import declaration is incomplete. Record 103 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0720,Import entry rejected. Record 103 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0721,Container return query. Record 103 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0722,Refrigeration stopped and the cold chain is outside its limit. Entry 104 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0723,Seal was tampered with and the case is punctured. Entry 104 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0724,Vehicle is behind schedule after a missed connection. Entry 104 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0725,Cargo reached the incorrect hub. Entry 104 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0726,Health certificate cannot be located. Entry 104 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0727,Customs hold remains active. Entry 104 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0728,All parties were informed of the routine update. Entry 104 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0729,Temperature logger recorded an excursion. Record 105 was filed from North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0730,Outer packaging is smashed. Record 105 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0731,Delivery is overdue. Record 105 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0732,Route sent the parcel elsewhere. Record 105 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0733,Packing list was omitted from the pouch. Record 105 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0734,Clearance is blocked at the border. Record 105 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0735,Consignee acknowledged the message. Record 105 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0736,Tempature alarm on chilled cargo. Entry 106 was logged at North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
 SYN-0737,Damagd parcel received. Entry 106 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
 SYN-0738,Shipmnt delyed by 10 hours. Entry 106 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
 SYN-0739,Misrouted shipmnt. Entry 106 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0740,Manfest error blocks dispatch. Entry 106 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0740,Bill of lading number is incorrect. Entry 106 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
 SYN-0741,Customs clerance pending. Entry 106 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
 SYN-0742,Packaging question. Entry 106 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
 SYN-0743,Frozen goods are thawing at North Hub. Record 107 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
 SYN-0744,Goods arrived dented at Harbor Depot. Record 107 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
 SYN-0745,Consignment has not arrived. Record 107 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
 SYN-0746,Delivered to another warehouse. Record 107 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0747,No signed delivery note. Record 107 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0747,Air waybill is absent. Record 107 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
 SYN-0748,Cargo detained for duty review. Record 107 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
 SYN-0749,Update contact preference. Record 107 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
 SYN-0750,Cooling unit failed overnight. Entry 108 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
 SYN-0751,Carton ripped open. Entry 108 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
 SYN-0752,ETA slipped again at Central Yard. Entry 108 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
 SYN-0753,Destination label is wrong. Entry 108 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0754,Paperwork has the wrong reference. Entry 108 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0754,Certificate of origin has expired. Entry 108 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
 SYN-0755,Import entry rejected. Entry 108 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
 SYN-0756,Container return query. Entry 108 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0757,Tempature alarm on chilled cargo. Record 109 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0758,Damagd parcel received. Record 109 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0759,Shipmnt delyed by 13 hours. Record 109 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0760,Misrouted shipmnt. Record 109 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0761,Manfest error blocks dispatch. Record 109 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0762,Customs clerance pending. Record 109 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0763,Packaging question. Record 109 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0764,Frozen goods are thawing at North Hub. Entry 110 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0765,Goods arrived dented at Harbor Depot. Entry 110 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0766,Consignment has not arrived. Entry 110 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0767,Delivered to another warehouse. Entry 110 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0768,No signed delivery note. Entry 110 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0769,Cargo detained for duty review. Entry 110 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0770,Update contact preference. Entry 110 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0771,Cooling unit failed overnight. Record 111 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0772,Carton ripped open. Record 111 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0773,ETA slipped again at Central Yard. Record 111 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0774,Destination label is wrong. Record 111 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0775,Paperwork has the wrong reference. Record 111 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0776,Import entry rejected. Record 111 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0777,Container return query. Record 111 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0778,Tempature alarm on chilled cargo. Entry 112 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0779,Damagd parcel received. Entry 112 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0780,Shipmnt delyed by 16 hours. Entry 112 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0781,Misrouted shipmnt. Entry 112 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0782,Manfest error blocks dispatch. Entry 112 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0783,Customs clerance pending. Entry 112 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0784,Packaging question. Entry 112 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0785,Frozen goods are thawing at North Hub. Record 113 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0786,Goods arrived dented at Harbor Depot. Record 113 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0787,Consignment has not arrived. Record 113 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0788,Delivered to another warehouse. Record 113 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0789,No signed delivery note. Record 113 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0790,Cargo detained for duty review. Record 113 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0791,Update contact preference. Record 113 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0792,Cooling unit failed overnight. Entry 114 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0793,Carton ripped open. Entry 114 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0794,ETA slipped again at Central Yard. Entry 114 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0795,Destination label is wrong. Entry 114 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0796,Paperwork has the wrong reference. Entry 114 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0797,Import entry rejected. Entry 114 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0798,Container return query. Entry 114 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0799,Tempature alarm on chilled cargo. Record 115 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0800,Damagd parcel received. Record 115 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0801,Shipmnt delyed by 19 hours. Record 115 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0802,Misrouted shipmnt. Record 115 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0803,Manfest error blocks dispatch. Record 115 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0804,Customs clerance pending. Record 115 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0805,Packaging question. Record 115 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0806,Frozen goods are thawing at North Hub. Entry 116 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0807,Goods arrived dented at Harbor Depot. Entry 116 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0808,Consignment has not arrived. Entry 116 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0809,Delivered to another warehouse. Entry 116 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0810,No signed delivery note. Entry 116 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0811,Cargo detained for duty review. Entry 116 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0812,Update contact preference. Entry 116 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0813,Cooling unit failed overnight. Record 117 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0814,Carton ripped open. Record 117 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0815,ETA slipped again at Central Yard. Record 117 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0816,Destination label is wrong. Record 117 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0817,Paperwork has the wrong reference. Record 117 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0818,Import entry rejected. Record 117 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0819,Container return query. Record 117 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0820,Tempature alarm on chilled cargo. Entry 118 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0821,Damagd parcel received. Entry 118 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0822,Shipmnt delyed by 22 hours. Entry 118 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0823,Misrouted shipmnt. Entry 118 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0824,Manfest error blocks dispatch. Entry 118 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0825,Customs clerance pending. Entry 118 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0826,Packaging question. Entry 118 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0827,Frozen goods are thawing at North Hub. Record 119 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0828,Goods arrived dented at Harbor Depot. Record 119 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0829,Consignment has not arrived. Record 119 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0830,Delivered to another warehouse. Record 119 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0831,No signed delivery note. Record 119 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0832,Cargo detained for duty review. Record 119 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0833,Update contact preference. Record 119 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
-SYN-0834,Cooling unit failed overnight. Entry 120 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
-SYN-0835,Carton ripped open. Entry 120 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
-SYN-0836,ETA slipped again at Central Yard. Entry 120 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
-SYN-0837,Destination label is wrong. Entry 120 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
-SYN-0838,Paperwork has the wrong reference. Entry 120 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
-SYN-0839,Import entry rejected. Entry 120 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
-SYN-0840,Container return query. Entry 120 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0757,Refrigeration stopped and the cold chain is outside its limit. Record 109 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0758,Seal was tampered with and the case is punctured. Record 109 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0759,Vehicle is behind schedule after a missed connection. Record 109 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0760,Cargo reached the incorrect hub. Record 109 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0761,Proof of delivery is unsigned. Record 109 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0762,Customs hold remains active. Record 109 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0763,All parties were informed of the routine update. Record 109 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0764,Temperature logger recorded an excursion. Entry 110 was logged at North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0765,Outer packaging is smashed. Entry 110 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0766,Delivery is overdue. Entry 110 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0767,Route sent the parcel elsewhere. Entry 110 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0768,Receipt was omitted from the file. Entry 110 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0769,Clearance is blocked at the border. Entry 110 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0770,Consignee acknowledged the message. Entry 110 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0771,Tempature alarm on chilled cargo. Record 111 was filed from North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0772,Damagd parcel received. Record 111 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0773,Shipmnt delyed by 15 hours. Record 111 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0774,Misrouted shipmnt. Record 111 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0775,Import declaration is incomplete. Record 111 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0776,Customs clerance pending. Record 111 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0777,Packaging question. Record 111 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0778,Frozen goods are thawing at North Hub. Entry 112 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0779,Goods arrived dented at Harbor Depot. Entry 112 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0780,Consignment has not arrived. Entry 112 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0781,Delivered to another warehouse. Entry 112 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0782,Health certificate cannot be located. Entry 112 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0783,Cargo detained for duty review. Entry 112 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0784,Update contact preference. Entry 112 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0785,Cooling unit failed overnight. Record 113 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0786,Carton ripped open. Record 113 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0787,ETA slipped again at Central Yard. Record 113 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0788,Destination label is wrong. Record 113 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0789,Packing list was omitted from the pouch. Record 113 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0790,Import entry rejected. Record 113 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0791,Container return query. Record 113 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0792,Refrigeration stopped and the cold chain is outside its limit. Entry 114 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0793,Seal was tampered with and the case is punctured. Entry 114 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0794,Vehicle is behind schedule after a missed connection. Entry 114 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0795,Cargo reached the incorrect hub. Entry 114 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0796,Bill of lading number is incorrect. Entry 114 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0797,Customs hold remains active. Entry 114 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0798,All parties were informed of the routine update. Entry 114 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0799,Temperature logger recorded an excursion. Record 115 was filed from North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0800,Outer packaging is smashed. Record 115 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0801,Delivery is overdue. Record 115 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0802,Route sent the parcel elsewhere. Record 115 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0803,Air waybill is absent. Record 115 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0804,Clearance is blocked at the border. Record 115 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0805,Consignee acknowledged the message. Record 115 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0806,Tempature alarm on chilled cargo. Entry 116 was logged at North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0807,Damagd parcel received. Entry 116 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0808,Shipmnt delyed by 20 hours. Entry 116 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0809,Misrouted shipmnt. Entry 116 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0810,Certificate of origin has expired. Entry 116 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0811,Customs clerance pending. Entry 116 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0812,Packaging question. Entry 116 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0813,Frozen goods are thawing at North Hub. Record 117 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0814,Goods arrived dented at Harbor Depot. Record 117 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0815,Consignment has not arrived. Record 117 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0816,Delivered to another warehouse. Record 117 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0817,Proof of delivery is unsigned. Record 117 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0818,Cargo detained for duty review. Record 117 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0819,Update contact preference. Record 117 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0820,Cooling unit failed overnight. Entry 118 was logged at North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0821,Carton ripped open. Entry 118 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0822,ETA slipped again at Central Yard. Entry 118 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0823,Destination label is wrong. Entry 118 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0824,Receipt was omitted from the file. Entry 118 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0825,Import entry rejected. Entry 118 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0826,Container return query. Entry 118 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0827,Refrigeration stopped and the cold chain is outside its limit. Record 119 was filed from North Hub.,TEMPERATURE_EXCURSION,true,synthetic_test_template_family_v3,test
+SYN-0828,Seal was tampered with and the case is punctured. Record 119 was filed from Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0829,Vehicle is behind schedule after a missed connection. Record 119 was filed from Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0830,Cargo reached the incorrect hub. Record 119 was filed from Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0831,Import declaration is incomplete. Record 119 was filed from West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0832,Customs hold remains active. Record 119 was filed from North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0833,All parties were informed of the routine update. Record 119 was filed from Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test
+SYN-0834,Temperature logger recorded an excursion. Entry 120 was logged at North Hub.,TEMPERATURE_EXCURSION,false,synthetic_test_template_family_v3,test
+SYN-0835,Outer packaging is smashed. Entry 120 was logged at Harbor Depot.,DAMAGE,false,synthetic_test_template_family_v3,test
+SYN-0836,Delivery is overdue. Entry 120 was logged at Central Yard.,DELAY,false,synthetic_test_template_family_v3,test
+SYN-0837,Route sent the parcel elsewhere. Entry 120 was logged at Airport Warehouse.,WRONG_DESTINATION,false,synthetic_test_template_family_v3,test
+SYN-0838,Health certificate cannot be located. Entry 120 was logged at West Gate.,DOCUMENTATION,false,synthetic_test_template_family_v3,test
+SYN-0839,Clearance is blocked at the border. Entry 120 was logged at North Hub.,CUSTOMS_HOLD,false,synthetic_test_template_family_v3,test
+SYN-0840,Consignee acknowledged the message. Entry 120 was logged at Harbor Depot.,OTHER,false,synthetic_test_template_family_v3,test

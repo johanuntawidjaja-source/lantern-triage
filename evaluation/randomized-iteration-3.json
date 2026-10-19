@@ -1,0 +1,28 @@
+{
+  "seed": 20261021,
+  "method": "randomized compositional synthetic adversarial suite",
+  "results": [
+    {
+      "iteration": "guards_disabled_ablation",
+      "reports": 235,
+      "route_accuracy": 0.7361702127659574,
+      "urgent_accuracy": 0.8893617021276595,
+      "dangerous_direct_routes": 35,
+      "false_urgent_flags": 8,
+      "documentation_correct_or_reviewed": 40,
+      "temperature_false_positives": 0,
+      "clear_correct_routes": 56
+    },
+    {
+      "iteration": "revised_guarded_system",
+      "reports": 235,
+      "route_accuracy": 0.8851063829787233,
+      "urgent_accuracy": 0.9617021276595744,
+      "dangerous_direct_routes": 0,
+      "false_urgent_flags": 0,
+      "documentation_correct_or_reviewed": 40,
+      "temperature_false_positives": 0,
+      "clear_correct_routes": 56
+    }
+  ]
+}

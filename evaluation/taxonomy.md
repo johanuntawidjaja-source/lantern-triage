@@ -6,7 +6,7 @@
 | DAMAGE | packaging or goods are physically damaged | leak, hazard, or safety risk |
 | DELAY | schedule or ETA is missed | time-critical language or essential goods |
 | WRONG_DESTINATION | address, depot, or route is incorrect | always review if destination is ambiguous |
-| DOCUMENTATION | paperwork, invoice, manifest, permit, or signature issue | deadline or border impact |
+| DOCUMENTATION | invoice, receipt, packing list, bill of lading/waybill, proof of delivery, certificate, declaration, permit, signature, or other paperwork issue | deadline or border impact |
 | CUSTOMS_HOLD | border, duty, tariff, inspection, or clearance hold | perishable or deadline-bound cargo |
 | OTHER | none of the above | human review when confidence is low |
 

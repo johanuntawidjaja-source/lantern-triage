@@ -15,6 +15,7 @@ TEMPLATES = {
  "Temperature logger failed and vaccine cartons may be spoiled.",
  "Reefer too warm.", "Cold chain broken.", "Tempature alarm on chilled cargo.",
  "Frozen goods are thawing at {place}.", "Cooling unit failed overnight.",
+ "Refrigeration stopped and the cold chain is outside its limit.", "Temperature logger recorded an excursion.",
 ],
 "DAMAGE": [
  "Pallet arrived crushed; {n} cartons are damaged and one is leaking.",
@@ -22,6 +23,7 @@ TEMPLATES = {
  "Forklift impact broke the outer crate; contents require inspection.",
  "Shipment damaged.", "Box smashed in transit.", "Damagd parcel received.",
  "Goods arrived dented at {place}.", "Carton ripped open.",
+ "Seal was tampered with and the case is punctured.", "Outer packaging is smashed.",
 ],
 "DELAY": [
  "Truck is late after traffic near {place}; ETA moved by {n} hours.",
@@ -29,6 +31,7 @@ TEMPLATES = {
  "Carrier reported a delay; delivery is now expected tomorrow.",
  "Delivery late.", "Truck overdue.", "Shipmnt delyed by {n} hours.",
  "Consignment has not arrived.", "ETA slipped again at {place}.",
+ "Vehicle is behind schedule after a missed connection.", "Delivery is overdue.",
 ],
 "WRONG_DESTINATION": [
  "Shipment was sent to the wrong depot in {place}.",
@@ -36,6 +39,7 @@ TEMPLATES = {
  "Driver reports the wrong address on the delivery instruction.",
  "Sent to wrong place.", "Parcel at incorrect hub.", "Misrouted shipmnt.",
  "Delivered to another warehouse.", "Destination label is wrong.",
+ "Cargo reached the incorrect hub.", "Route sent the parcel elsewhere.",
 ],
 "DOCUMENTATION": [
  "Commercial invoice is missing from the document pouch.",
@@ -43,6 +47,10 @@ TEMPLATES = {
  "Delivery requires a signature but the proof-of-delivery form is blank.",
  "Invoice missing.", "Docs incomplete.", "Manfest error blocks dispatch.",
  "No signed delivery note.", "Paperwork has the wrong reference.",
+ "Packing list was omitted from the pouch.", "Bill of lading number is incorrect.",
+ "Air waybill is absent.", "Certificate of origin has expired.",
+ "Proof of delivery is unsigned.", "Receipt was omitted from the file.",
+ "Import declaration is incomplete.", "Health certificate cannot be located.",
 ],
 "CUSTOMS_HOLD": [
  "Customs placed the cargo on hold pending inspection at the border.",
@@ -50,6 +58,7 @@ TEMPLATES = {
  "Border agent requested a tariff code before releasing the shipment.",
  "Held at customs.", "Border release refused.", "Customs clerance pending.",
  "Cargo detained for duty review.", "Import entry rejected.",
+ "Customs hold remains active.", "Clearance is blocked at the border.",
 ],
 "OTHER": [
  "Customer asked to update the preferred delivery window.",
@@ -57,6 +66,7 @@ TEMPLATES = {
  "General inquiry about packaging options for a future shipment.",
  "Please call customer.", "Change delivery window.", "Packaging question.",
  "Update contact preference.", "Container return query.",
+ "All parties were informed of the routine update.", "Consignee acknowledged the message.",
 ]}
 
 PLACES = ["North Hub", "Harbor Depot", "Central Yard", "Airport Warehouse", "West Gate"]
@@ -68,12 +78,14 @@ def main():
     for i in range(840):
         cat=cats[i % len(cats)]; j=per_cat[cat]; per_cat[cat]+=1
         split="train" if i < 650 else "test"
-        family=TEMPLATES[cat][:5] if split=="train" else TEMPLATES[cat][5:]
+        # Keep whole wording families on only one side of the split.
+        cut=max(5, len(TEMPLATES[cat])//2)
+        family=TEMPLATES[cat][:cut] if split=="train" else TEMPLATES[cat][cut:]
         place=PLACES[(j*3+i) % len(PLACES)]; n=(j % 97)+2
         base=family[j % len(family)].format(n=n, place=place)
         context=(TRAIN_CONTEXT if split=="train" else TEST_CONTEXT)[j % (3 if split=="train" else 2)]
         text=f"{base} {context.format(n=j+1,place=place)}"
-        urgent = cat in {"TEMPERATURE_EXCURSION"} or any(x in text.lower() for x in ["leaking", "spoiled", "medicine", "vaccine"])
+        urgent = any(x in text.lower() for x in ["leaking", "spoiled", "medicine", "vaccine", "thawing", "cooling unit failed", "refrigeration stopped"])
         rows.append({"incident_id":f"SYN-{i+1:04d}","report_text":text,
                      "category":cat,"urgent":str(urgent).lower(),
                      "source":f"synthetic_{split}_template_family_v3","split":split})
