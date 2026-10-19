@@ -3,7 +3,7 @@
 A working, privacy-first prototype for classifying logistics incident reports,
 routing urgent cases, and abstaining to human review when confidence is low.
 
-> **Live demo:** GitHub Pages URL will be inserted after the first deployment.
+> **Live demo:** https://johanuntawidjaja-source.github.io/lantern-triage/
 
 ## What the examiner can verify
 

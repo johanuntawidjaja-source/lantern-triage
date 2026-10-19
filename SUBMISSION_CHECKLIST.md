@@ -14,7 +14,7 @@
 - [x] One-page business summary
 - [x] Collaborator and AI-tool attribution
 - [x] Privacy/security documentation and repository scanner
-- [ ] Public GitHub repository created
+- [x] Public GitHub repository created
 - [ ] GitHub Pages deployment verified from a fresh browser
 - [ ] Public repository URL submitted to the assessment
 
