@@ -19,7 +19,7 @@ function render(p){
   $("#next").textContent=p.abstain?"A dispatcher should review the original report and choose the queue.":`Send to ${labels[p.category]} for confirmation. A human remains accountable for the final route.`;
   $("#probabilities").innerHTML=Object.entries(p.probs).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><span>${labels[k]}</span><span class="track"><span class="fill" style="display:block;width:${v*100}%"></span></span><b>${Math.round(v*100)}%</b></div>`).join("");
 }
-async function init(){model=await fetch("model.json").then(r=>r.json());try{const r=await fetch("evaluation/results.json").then(r=>r.json());$("#coverage").textContent=`${Math.round(r[1].coverage*100)}%`}catch{$("#coverage").textContent="Measured"}}
+async function init(){model=await fetch("model.json?v=4",{cache:"no-store"}).then(r=>r.json());try{const r=await fetch("evaluation/results.json?v=4",{cache:"no-store"}).then(r=>r.json());$("#coverage").textContent=`${Math.round(r[1].coverage*100)}%`}catch{$("#coverage").textContent="Measured"}}
 $("#classify").onclick=()=>{const text=$("#report").value.trim();if(!text){$("#report").focus();return}render(predict(text))};
 $("#example").onclick=()=>{$("#report").value="Customs placed a refrigerated medicine shipment on hold pending inspection. Clearance is required today.";render(predict($("#report").value))};
 $("#clear").onclick=()=>{$("#report").value="";$("#result").hidden=true;$("#empty").hidden=false};
