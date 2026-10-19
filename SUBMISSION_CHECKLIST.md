@@ -15,7 +15,7 @@
 - [x] Collaborator and AI-tool attribution
 - [x] Privacy/security documentation and repository scanner
 - [x] Public GitHub repository created
-- [ ] GitHub Pages deployment verified from a fresh browser
+- [x] GitHub Pages deployment verified from a fresh unauthenticated browser
 - [ ] Public repository URL submitted to the assessment
 
 The final three items require publication. Do not mark the assessment submission as
