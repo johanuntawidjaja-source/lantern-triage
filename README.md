@@ -33,8 +33,10 @@ evaluation method. See [`evaluation/ERROR_ANALYSIS.md`](evaluation/ERROR_ANALYSI
 
 ### Independent label review
 
-The repository owner classified 50 reports without seeing their generated labels
-or model predictions. All 50 decisions agreed with the reference labels. This shows
+**Johan Untawidjaja, the repository owner, personally classified all 50 reports**
+without seeing their generated labels or model predictions. Codex presented the
+blinded records and calculated agreement only after Johan completed the labels.
+All 50 decisions agreed with the reference labels. This shows
 that the template labels are internally clear; it does not substitute for review by
 logistics specialists on real, de-identified reports. See
 [`evaluation/HUMAN_REVIEW.md`](evaluation/HUMAN_REVIEW.md).
@@ -85,8 +87,9 @@ Then open `http://localhost:8000/web/`.
 
 ## Collaboration and AI disclosure
 
-The repository owner defined the product direction and accepted the final scope.
-OpenAI Codex was used to generate the initial code and synthetic templates, run
+Johan Untawidjaja defined the product direction, personally completed the 50-report
+blinded label review, and accepted the final scope. OpenAI Codex was used to
+generate the initial code and synthetic templates, present the blinded review items, run
 tests, perform a privacy scan, and critique the submission
 against the exam brief. All generated evidence is reproducible from the scripts.
 No private chat transcript, account credential, personal dataset, or unrelated
