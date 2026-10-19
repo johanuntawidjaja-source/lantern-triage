@@ -25,9 +25,21 @@ URGENT_TERMS = [
     "urgent", "critical", "hospital", "medicine", "vaccine", "spoiled",
     "leaking", "hazard", "fire", "24 hours", "today", "immediately",
 ]
+AMBIGUOUS_PHRASES = [
+    "something went wrong", "shipment issue", "please investigate", "problem at hub",
+    "cargo needs attention", "status unclear", "operator requested help",
+]
 
 def tokens(text: str) -> list[str]:
-    return re.findall(r"[a-z0-9]+", text.lower())
+    """Return word, word-bigram, and character-subword features."""
+    words = re.findall(r"[a-z0-9]+", text.lower())
+    features = list(words)
+    features.extend(f"w2:{a}_{b}" for a, b in zip(words, words[1:]))
+    for word in words:
+        padded = f"^{word}$"
+        for n in (3, 4, 5):
+            features.extend(f"c:{padded[i:i+n]}" for i in range(len(padded)-n+1))
+    return features
 
 def baseline(text: str) -> dict:
     lower = text.lower()
@@ -59,7 +71,7 @@ class NaiveBayes:
         self.totals = {label: sum(word_counts[label].values()) for label in self.labels}
         return self
 
-    def predict(self, text: str, threshold: float = 0.86) -> dict:
+    def predict(self, text: str, threshold: float = 0.80) -> dict:
         words = tokens(text)
         scored = {}
         size = max(1, len(self.vocab))
@@ -70,25 +82,33 @@ class NaiveBayes:
                 score += math.log((self.counts[label][word] + 1) / denom)
             scored[label] = score
         peak = max(scored.values())
-        # Temperature scaling prevents the tiny synthetic corpus from reporting
-        # implausible near-100% confidence. This is a prototype calibration,
-        # documented as such rather than presented as production certainty.
-        probs = {k: math.exp((v - peak) / 6.0) for k, v in scored.items()}
+        # Modest temperature scaling avoids presenting raw synthetic-corpus scores
+        # as certainty while retaining useful separation on short reports.
+        probs = {k: math.exp((v - peak) / 4.0) for k, v in scored.items()}
         z = sum(probs.values())
         probs = {k: v / z for k, v in probs.items()}
         category = max(probs, key=probs.get)
         confidence = probs[category]
         lower = text.lower()
         urgent = category == "TEMPERATURE_EXCURSION" or any(term in lower for term in URGENT_TERMS)
-        abstain = confidence < threshold
+        generic_only = any(p in lower for p in AMBIGUOUS_PHRASES) and not any(
+            anchor in lower for phrases in KEYWORDS.values() for anchor in phrases
+        )
+        abstain = confidence < threshold or generic_only
         return {"category": category, "urgent": urgent, "confidence": confidence,
                 "abstain": abstain, "route": "HUMAN_REVIEW" if abstain else category,
+                "abstain_reason": "ambiguous_language" if generic_only else
+                                   ("low_confidence" if confidence < threshold else None),
                 "probabilities": probs}
 
     def to_json(self, path: Path) -> None:
         payload = {"labels": self.labels, "priors": self.priors,
                    "counts": {k: dict(v) for k, v in self.counts.items()},
                    "totals": self.totals, "vocabSize": len(self.vocab),
-                   "urgentTerms": URGENT_TERMS, "threshold": 0.86}
+                   "urgentTerms": URGENT_TERMS, "threshold": 0.80,
+                   "ambiguousPhrases": AMBIGUOUS_PHRASES,
+                   "categoryAnchors": [a for phrases in KEYWORDS.values() for a in phrases],
+                   "temperature": 4.0,
+                   "featureVersion": "word-char-ngram-v2"}
         path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 

@@ -24,7 +24,7 @@ def score(name, fn, test):
       "p50_latency_ms":statistics.median(times),"estimated_cost_usd_per_1000":0.0}
 
 def main():
-    rows=load(); train=rows[:560]; test=rows[560:]
+    rows=load(); train=rows[:650]; test=rows[650:]
     model=NaiveBayes().fit(train)
     results=[score("keyword_baseline", baseline, test), score("naive_bayes_with_abstention", model.predict, test)]
     out=ROOT/"evaluation"; out.mkdir(exist_ok=True)

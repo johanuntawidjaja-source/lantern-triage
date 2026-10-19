@@ -1,10 +1,13 @@
 # Dataset card
 
 - **Purpose:** evaluate routing of fictional logistics incident reports.
-- **Size:** 720 reports across seven categories.
+- **Size:** 840 reports across seven categories.
 - **Provenance:** deterministic templates in `scripts/generate_data.py`; no customer
   records, scraped content, personal data, or confidential company information.
-- **Split:** first 560 shuffled rows train; final 160 rows test. Seed: `20261019`.
+- **Split:** first 650 shuffled rows train; final 190 rows test. Seed: `20261019`.
+- **Variation:** templates include full and short reports, synonyms, operational
+  paraphrases, and deliberately misspelled forms. A separate 42-case challenge
+  set in `scripts/robustness.py` is not part of the training file.
 - **Known limitation:** templated data is cleaner than production text and therefore
   inflates measured accuracy. Results establish reproducibility, not field validity.
 - **Independent label review:** `human_review.csv` records 50 blinded classifications

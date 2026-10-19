@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Privacy-first logistics incident triage demonstration">
-  <title>Lantern Triage</title>
+  <title>Lentera Triage</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#top"><span class="mark">L</span><span>Lantern Triage</span></a>
+    <a class="brand" href="#top"><span class="mark">L</span><span>Lentera Triage</span></a>
     <nav><a href="#method">Method</a><a href="#privacy">Privacy</a><a href="evaluation/results.json">Results</a></nav>
   </header>
   <main id="top">
     <section class="hero">
-      <div><p class="eyebrow">LOGISTICS INCIDENT ROUTING</p>
-      <h1>Put the right incident in front of the right person.</h1>
+      <div><p class="eyebrow">LENTERA · LOGISTICS INCIDENT ROUTING</p>
+      <h1>See the signal.<br><em>Route with confidence.</em></h1>
       <p class="lede">A transparent, zero-API-cost prototype that classifies reports, flags urgency, and abstains when confidence is low.</p>
       <div class="badges"><span>7 queues</span><span>Human-review fallback</span><span>Runs in your browser</span></div></div>
       <aside class="metric"><b id="coverage">—</b><span>measured coverage</span><small>from the reproducible test split</small></aside>
@@ -45,14 +45,14 @@
     <section id="method" class="section"><p class="eyebrow">EVIDENCE, NOT A BLACK BOX</p><h2>Designed around costly mistakes</h2>
       <div class="cards">
         <article><b>Baseline</b><h3>Keyword router</h3><p>A simple, inspectable reference point. Fast and free, but brittle around synonyms and mixed incidents.</p></article>
-        <article><b>Candidate</b><h3>Naive Bayes + abstention</h3><p>A probabilistic text model. Low-confidence predictions go to a person instead of being forced.</p></article>
+        <article><b>Candidate</b><h3>Subword Naive Bayes</h3><p>Word and character patterns tolerate short reports and common typos. Low-confidence predictions still go to a person.</p></article>
         <article><b>Guardrail</b><h3>Risk-weighted evaluation</h3><p>Urgent misses and temperature/customs misroutes are reported separately from average accuracy.</p></article>
       </div>
     </section>
 
     <section id="privacy" class="section privacy"><div><p class="eyebrow">PRIVACY</p><h2>No report text leaves this page.</h2></div><p>The model runs locally in the browser. There is no login, API call, analytics SDK, or server-side report storage in this demonstration. Refreshing clears the text box.</p></section>
   </main>
-  <footer>Lantern Triage · Demonstration system · Human operators retain control</footer>
+  <footer>Lentera Triage · Demonstration system · Human operators retain control</footer>
   <script src="app.js"></script>
 </body></html>
 

@@ -1,0 +1,300 @@
+{
+  "named_challenge_cases": 35,
+  "correct_direct_routes": 29,
+  "safe_abstentions": 6,
+  "misroutes": 0,
+  "direct_route_accuracy": 0.8285714285714286,
+  "ambiguous_cases": 7,
+  "ambiguous_abstentions": 7,
+  "cases": [
+    {
+      "text": "reefer heating up",
+      "expected": "TEMPERATURE_EXCURSION",
+      "route": "TEMPERATURE_EXCURSION",
+      "confidence": 0.99976,
+      "correct": true
+    },
+    {
+      "text": "chill was lost",
+      "expected": "TEMPERATURE_EXCURSION",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.724256,
+      "correct": false
+    },
+    {
+      "text": "frzen cargo getting soft",
+      "expected": "TEMPERATURE_EXCURSION",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.790018,
+      "correct": false
+    },
+    {
+      "text": "refrigeration fault",
+      "expected": "TEMPERATURE_EXCURSION",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.686339,
+      "correct": false
+    },
+    {
+      "text": "thermal reading excessive",
+      "expected": "TEMPERATURE_EXCURSION",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.442454,
+      "correct": false
+    },
+    {
+      "text": "freight was damaged",
+      "expected": "DAMAGE",
+      "route": "DAMAGE",
+      "confidence": 0.999992,
+      "correct": true
+    },
+    {
+      "text": "merchandise got crushed",
+      "expected": "DAMAGE",
+      "route": "DAMAGE",
+      "confidence": 0.999892,
+      "correct": true
+    },
+    {
+      "text": "pakage brokn on arrival",
+      "expected": "DAMAGE",
+      "route": "DAMAGE",
+      "confidence": 0.999723,
+      "correct": true
+    },
+    {
+      "text": "visible dents on goods",
+      "expected": "DAMAGE",
+      "route": "DAMAGE",
+      "confidence": 0.802115,
+      "correct": true
+    },
+    {
+      "text": "wrapping has ripped",
+      "expected": "DAMAGE",
+      "route": "DAMAGE",
+      "confidence": 0.996468,
+      "correct": true
+    },
+    {
+      "text": "delivery is overdue",
+      "expected": "DELAY",
+      "route": "DELAY",
+      "confidence": 0.99998,
+      "correct": true
+    },
+    {
+      "text": "truck running behind",
+      "expected": "DELAY",
+      "route": "DELAY",
+      "confidence": 0.995802,
+      "correct": true
+    },
+    {
+      "text": "shipmnt has been delyed",
+      "expected": "DELAY",
+      "route": "DELAY",
+      "confidence": 0.999998,
+      "correct": true
+    },
+    {
+      "text": "arrival estimate slipped",
+      "expected": "DELAY",
+      "route": "DELAY",
+      "confidence": 0.99923,
+      "correct": true
+    },
+    {
+      "text": "cargo still has not arrived",
+      "expected": "DELAY",
+      "route": "DELAY",
+      "confidence": 0.984894,
+      "correct": true
+    },
+    {
+      "text": "sent to an unintended place",
+      "expected": "WRONG_DESTINATION",
+      "route": "WRONG_DESTINATION",
+      "confidence": 0.999999,
+      "correct": true
+    },
+    {
+      "text": "parcel reached an incorrect hub",
+      "expected": "WRONG_DESTINATION",
+      "route": "WRONG_DESTINATION",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "shipmnt badly misrouted",
+      "expected": "WRONG_DESTINATION",
+      "route": "WRONG_DESTINATION",
+      "confidence": 0.999993,
+      "correct": true
+    },
+    {
+      "text": "incorrect delivery site",
+      "expected": "WRONG_DESTINATION",
+      "route": "WRONG_DESTINATION",
+      "confidence": 0.999992,
+      "correct": true
+    },
+    {
+      "text": "cargo went elsewhere",
+      "expected": "WRONG_DESTINATION",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.644122,
+      "correct": false
+    },
+    {
+      "text": "invoice cannot be found",
+      "expected": "DOCUMENTATION",
+      "route": "DOCUMENTATION",
+      "confidence": 0.999984,
+      "correct": true
+    },
+    {
+      "text": "shipping docs are incomplete",
+      "expected": "DOCUMENTATION",
+      "route": "DOCUMENTATION",
+      "confidence": 0.988609,
+      "correct": true
+    },
+    {
+      "text": "manfest contains typo",
+      "expected": "DOCUMENTATION",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.763032,
+      "correct": false
+    },
+    {
+      "text": "receiver signature absent",
+      "expected": "DOCUMENTATION",
+      "route": "DOCUMENTATION",
+      "confidence": 0.999953,
+      "correct": true
+    },
+    {
+      "text": "incorrect paperwork reference",
+      "expected": "DOCUMENTATION",
+      "route": "DOCUMENTATION",
+      "confidence": 0.999988,
+      "correct": true
+    },
+    {
+      "text": "customs will not release it",
+      "expected": "CUSTOMS_HOLD",
+      "route": "CUSTOMS_HOLD",
+      "confidence": 0.999997,
+      "correct": true
+    },
+    {
+      "text": "border release was refused",
+      "expected": "CUSTOMS_HOLD",
+      "route": "CUSTOMS_HOLD",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "clerance still pending",
+      "expected": "CUSTOMS_HOLD",
+      "route": "CUSTOMS_HOLD",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "unpaid duty blocks cargo",
+      "expected": "CUSTOMS_HOLD",
+      "route": "CUSTOMS_HOLD",
+      "confidence": 0.999999,
+      "correct": true
+    },
+    {
+      "text": "import declaration rejected",
+      "expected": "CUSTOMS_HOLD",
+      "route": "CUSTOMS_HOLD",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "question about packing",
+      "expected": "OTHER",
+      "route": "OTHER",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "customer requests a call",
+      "expected": "OTHER",
+      "route": "OTHER",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "change requested time slot",
+      "expected": "OTHER",
+      "route": "OTHER",
+      "confidence": 0.998622,
+      "correct": true
+    },
+    {
+      "text": "query on returning container",
+      "expected": "OTHER",
+      "route": "OTHER",
+      "confidence": 1.0,
+      "correct": true
+    },
+    {
+      "text": "contact preference update",
+      "expected": "OTHER",
+      "route": "OTHER",
+      "confidence": 1.0,
+      "correct": true
+    }
+  ],
+  "ambiguous": [
+    {
+      "text": "something went wrong",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.996498,
+      "abstained": true
+    },
+    {
+      "text": "shipment issue",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.590762,
+      "abstained": true
+    },
+    {
+      "text": "please investigate",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.535187,
+      "abstained": true
+    },
+    {
+      "text": "problem at hub",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.717082,
+      "abstained": true
+    },
+    {
+      "text": "cargo needs attention",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.913429,
+      "abstained": true
+    },
+    {
+      "text": "status unclear",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.741723,
+      "abstained": true
+    },
+    {
+      "text": "operator requested help",
+      "route": "HUMAN_REVIEW",
+      "confidence": 0.952481,
+      "abstained": true
+    }
+  ]
+}

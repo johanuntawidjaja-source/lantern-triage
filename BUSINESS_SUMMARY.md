@@ -1,17 +1,18 @@
-# One-page business summary — Lantern Triage
+# One-page business summary — Lentera Triage
 
 ## Problem
 Logistics teams receive incident reports through inconsistent free text. Manual
 sorting delays urgent cases, while an incorrect automated route can be costly.
 
 ## Prototype
-Lantern Triage classifies a report into one of seven operational queues, flags
+Lentera Triage classifies a report into one of seven operational queues, flags
 urgent language, explains the signals it recognized, and sends uncertain cases to
 human review. It is a decision-support queue, not autonomous dispatch.
 
 ## Evidence
-The repository contains a deterministic 720-report synthetic dataset, a documented
-60-report secondary label review, a keyword baseline, a probabilistic model,
+The repository contains a deterministic 840-report synthetic dataset, a documented
+50-report blinded label review completed personally by Johan Untawidjaja, a keyword
+baseline, a probabilistic model,
 latency/cost/error measurements, and a changed-requirement experiment. The demo is
 browser-only and incurs no model/API cost.
 

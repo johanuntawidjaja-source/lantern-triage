@@ -1,9 +1,16 @@
 # Error analysis and abstention
 
 The keyword baseline is transparent but brittle: one word can dominate, synonyms
-are missed, and mixed incidents are forced into one route. The Naive Bayes model
-uses all observed words and estimates confidence, but the synthetic templates make
-its scores look better than production performance will be.
+are missed, and mixed incidents are forced into one route. The candidate combines
+word features, adjacent-word features, and character 3–5-grams in a Naive Bayes
+model. The subword features improve tolerance of short reports and typing errors,
+but the synthetic templates still make its scores look better than production
+performance will be.
+
+The separate robustness suite directly routes 29 of 35 clear short/synonym/typo
+cases correctly; the remaining six abstain rather than misroute. All seven
+deliberately vague cases go to human review. These cases were created as an explicit
+challenge set and are not evidence of field performance.
 
 Costly errors are counted separately for temperature and customs incidents because
 misrouting them may spoil goods or miss regulatory deadlines. Low-confidence cases

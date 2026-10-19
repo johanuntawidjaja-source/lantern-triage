@@ -1,7 +1,7 @@
 # Submission checklist
 
 - [x] Working browser demonstration
-- [x] 720 non-confidential synthetic incident reports
+- [x] 840 non-confidential synthetic incident reports
 - [x] Data provenance, deterministic seed, and limitations documented
 - [x] 50 blinded human label reviews completed before comparison
 - [x] Simple keyword baseline
